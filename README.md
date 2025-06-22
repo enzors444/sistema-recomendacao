@@ -37,7 +37,6 @@ O sistema oferece **3 tipos de recomendação**:
 
 #### 3. **Por Artista**
 - Todas as músicas do artista escolhido
-- Artistas com nomes similares
 - Músicas de gêneros relacionados
 
 ## 🧠 Algoritmo de Similaridade
