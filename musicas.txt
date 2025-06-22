@@ -1,0 +1,95 @@
+Shape of You;Ed Sheeran;Pop;2017
+Perfect;Ed Sheeran;Pop;2017
+Bohemian Rhapsody;Queen;Rock;1975
+Another One Bites the Dust;Queen;Rock;1980
+Blinding Lights;The Weeknd;Pop;2020
+Stairway to Heaven;Led Zeppelin;Rock;1971
+Photograph;Ed Sheeran;Pop;2015
+Smells Like Teen Spirit;Nirvana;Grunge;1991
+Happier;Ed Sheeran;Pop;2017
+Hotel California;Eagles;Rock;1976
+Bad Guy;Billie Eilish;Pop;2019
+Billie Jean;Michael Jackson;Pop;1982
+Sweet Child O' Mine;Guns N' Roses;Rock;1987
+Thinking Out Loud;Ed Sheeran;Pop;2014
+Thriller;Michael Jackson;Pop;1982
+Wonderwall;Oasis;Rock;1995
+Rolling in the Deep;Adele;Pop;2010
+Imagine;John Lennon;Rock;1971
+Take On Me;A-ha;Pop;1985
+Beat It;Michael Jackson;Pop;1982
+Hallelujah;Leonard Cohen;Folk;1984
+Smooth Operator;Sade;Jazz;1984
+Hotel Yorba;The White Stripes;Rock;2001
+Enter Sandman;Metallica;Metal;1991
+Lose Yourself;Eminem;Rap;2002
+All of Me;John Legend;R&B;2013
+Firework;Katy Perry;Pop;2010
+Shape of My Heart;Backstreet Boys;Pop;2000
+Hey Jude;The Beatles;Rock;1968
+Toxic;Britney Spears;Pop;2003
+Someone Like You;Adele;Pop;2011
+Africa;Toto;Rock;1982
+Smooth;Santana;Rock;1999
+My Heart Will Go On;Celine Dion;Pop;1997
+Viva La Vida;Coldplay;Pop Rock;2008
+Chandelier;Sia;Pop;2014
+Boogie Wonderland;Earth, Wind & Fire;Disco;1979
+Stayin' Alive;Bee Gees;Disco;1977
+Tennessee Whiskey;Chris Stapleton;Country;2015
+Before He Cheats;Carrie Underwood;Country;2005
+Zombie;The Cranberries;Rock;1994
+Creep;Radiohead;Alternative;1992
+Clocks;Coldplay;Pop Rock;2002
+All Star;Smash Mouth;Pop Rock;1999
+Hey Ya!;OutKast;Hip Hop;2003
+Sugar;Maroon 5;Pop;2014
+Rolling in the Deep;Adele;Pop;2010
+Counting Stars;OneRepublic;Pop Rock;2013
+Call Me Maybe;Carly Rae Jepsen;Pop;2011
+Blurred Lines;Robin Thicke;Pop;2013
+Radioactive;Imagine Dragons;Alternative;2012
+Uptown Funk;Mark Ronson;Funk;2014
+Can't Stop;Red Hot Chili Peppers;Rock;2002
+Back in Black;AC/DC;Rock;1980
+Sweet Home Alabama;Lynyrd Skynyrd;Rock;1974
+Livin' on a Prayer;Bon Jovi;Rock;1986
+Born to Run;Bruce Springsteen;Rock;1975
+Paint It Black;The Rolling Stones;Rock;1966
+Light My Fire;The Doors;Rock;1967
+Jump;Van Halen;Rock;1984
+Paranoid;Black Sabbath;Metal;1970
+Iron Man;Black Sabbath;Metal;1970
+Master of Puppets;Metallica;Metal;1986
+Nothing Else Matters;Metallica;Metal;1991
+One;Metallica;Metal;1988
+The Unforgiven;Metallica;Metal;1991
+Enter Sandman;Metallica;Metal;1991
+Blackbird;The Beatles;Rock;1968
+Come Together;The Beatles;Rock;1969
+Let It Be;The Beatles;Rock;1970
+Yesterday;The Beatles;Rock;1965
+Imagine;John Lennon;Rock;1971
+Purple Rain;Prince;Pop;1984
+When Doves Cry;Prince;Pop;1984
+Kiss;Prince;Pop;1986
+Thriller;Michael Jackson;Pop;1982
+Smooth Criminal;Michael Jackson;Pop;1987
+Beat It;Michael Jackson;Pop;1982
+Bad;Michael Jackson;Pop;1987
+Human Nature;Michael Jackson;Pop;1982
+Man in the Mirror;Michael Jackson;Pop;1987
+I Will Always Love You;Whitney Houston;Pop;1992
+Greatest Love of All;Whitney Houston;Pop;1986
+How Will I Know;Whitney Houston;Pop;1985
+Rolling in the Deep;Adele;Pop;2010
+Hello;Adele;Pop;2015
+Someone Like You;Adele;Pop;2011
+Set Fire to the Rain;Adele;Pop;2011
+Hello;Lionel Richie;Pop;1984
+All Night Long;Lionel Richie;Pop;1983
+Dancing on the Ceiling;Lionel Richie;Pop;1986
+Careless Whisper;George Michael;Pop;1984
+Faith;George Michael;Pop;1987
+Wake Me Up Before You Go-Go;Wham!;Pop;1984
+Last Christmas;Wham!;Pop;1984

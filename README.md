@@ -1,1 +1,2 @@
-# sistema-recomendacao
+# 🎵 Sistema de Recomendação Musical em C++
+... (conteúdo do README.md como fornecido acima) ...
