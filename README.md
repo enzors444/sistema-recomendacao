@@ -56,7 +56,6 @@ O sistema utiliza um **algoritmo proprietário** que considera:
 - **Mesma década**: +2 pontos
 
 ### Critérios Auxiliares (Peso Baixo)
-- **Artistas similares**: +3 pontos
 - **Duração similar**: +3 pontos
 - **Anos próximos**: +1-2 pontos
 - **Bônus especiais** para hits populares e músicas clássicas
