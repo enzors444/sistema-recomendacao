@@ -15,10 +15,6 @@ Este projeto é um sistema de recomendação de músicas desenvolvido em C++ com
 - `main.cpp`: Código-fonte principal do sistema
 - `musicas.txt`: Base de dados das músicas, com o formato:
 Título;Artista;Gênero;Ano
-
-yaml
-Copiar
-Editar
 - `usuarios.txt`: Dados de login de usuários (formato: `usuario senha`)
 - `recomendacoes.txt`: Histórico de recomendações feitas
 
