@@ -33,8 +33,12 @@ string capitalizarPalavras(const string& str) {
 struct Musica {
     string titulo;
     string artista;
+    string album;
     string genero;
     int ano;
+    string idioma;
+    int popularidade; // 1-10 (1=pouco conhecida, 10=muito popular)
+    int duracao;      // em segundos
 };
 
 struct Recomendacao {
@@ -44,47 +48,180 @@ struct Recomendacao {
 
 // ----------- Funções Auxiliares -----------
 
-bool artistaInternacional(const string& artista) {
-    string famosos[] = {
-        "Ed Sheeran", "Queen", "The Weeknd", "Led Zeppelin", "Nirvana", "Eagles",
-        "Billie Eilish", "Michael Jackson", "Guns N' Roses", "Oasis", "Adele",
-        "John Lennon", "A-ha"
-    };
-    for (int i = 0; i < 13; i++) {
-        if (artista == famosos[i]) return true;
-    }
-    return false;
-}
-
 bool mesmaDecada(int ano1, int ano2) {
     return (ano1 / 10) == (ano2 / 10);
 }
 
-bool palavrasEmComum(const string& titulo1, const string& titulo2) {
-    size_t pos = 0, espaco;
-    while ((espaco = titulo1.find(' ', pos)) != string::npos) {
-        string palavra = titulo1.substr(pos, espaco - pos);
-        if (!palavra.empty() && titulo2.find(palavra) != string::npos) {
-            return true;
-        }
-        pos = espaco + 1;
-    }
-    string palavraFinal = titulo1.substr(pos);
-    if (!palavraFinal.empty() && titulo2.find(palavraFinal) != string::npos) {
-        return true;
-    }
+bool mesmoSeculo(int ano1, int ano2) {
+    return (ano1 / 100) == (ano2 / 100);
+}
+
+bool artistasSimilares(const string& artista1, const string& artista2) {
+    // Verifica se um artista contém o outro (bandas com nomes similares)
+    string a1 = paraMinusculas(artista1);
+    string a2 = paraMinusculas(artista2);
+    
+    // Se um nome está contido no outro e tem pelo menos 4 caracteres
+    if (a1.length() >= 4 && a2.find(a1) != string::npos) return true;
+    if (a2.length() >= 4 && a1.find(a2) != string::npos) return true;
+    
     return false;
+}
+
+bool albumsSimilares(const string& album1, const string& album2) {
+    string a1 = paraMinusculas(album1);
+    string a2 = paraMinusculas(album2);
+    
+    
+    // Álbuns relacionados comuns
+    if ((a1.find("greatest hits") != string::npos && a2.find("best of") != string::npos) ||
+        (a1.find("best of") != string::npos && a2.find("greatest hits") != string::npos)) return true;
+    if ((a1.find("live") != string::npos && a2.find("ao vivo") != string::npos) ||
+        (a1.find("ao vivo") != string::npos && a2.find("live") != string::npos)) return true;
+    if ((a1.find("unplugged") != string::npos && a2.find("acustico") != string::npos) ||
+        (a1.find("acustico") != string::npos && a2.find("unplugged") != string::npos)) return true;
+    
+    return false;
+}
+
+bool generosSimilares(const string& genero1, const string& genero2) {
+    string g1 = paraMinusculas(genero1);
+    string g2 = paraMinusculas(genero2);
+    
+    // Gêneros relacionados
+    if ((g1 == "rock" && g2 == "pop rock") || (g1 == "pop rock" && g2 == "rock")) return true;
+    if ((g1 == "jazz" && g2 == "blues") || (g1 == "blues" && g2 == "jazz")) return true;
+    if ((g1 == "reggae" && g2 == "ska") || (g1 == "ska" && g2 == "reggae")) return true;
+    if ((g1 == "hip hop" && g2 == "rap") || (g1 == "rap" && g2 == "hip hop")) return true;
+    if ((g1 == "eletronica" && g2 == "techno") || (g1 == "techno" && g2 == "eletronica")) return true;
+    if ((g1 == "samba" && g2 == "bossa nova") || (g1 == "bossa nova" && g2 == "samba")) return true;
+    if ((g1 == "country" && g2 == "folk") || (g1 == "folk" && g2 == "country")) return true;
+    if ((g1 == "heavy metal" && g2 == "metal") || (g1 == "metal" && g2 == "heavy metal")) return true;
+    
+    return false;
+}
+
+bool idiomasSimilares(const string& idioma1, const string& idioma2) {
+    string i1 = paraMinusculas(idioma1);
+    string i2 = paraMinusculas(idioma2);
+    
+    // Idiomas relacionados
+    if ((i1 == "portugues" && i2 == "espanhol") || (i1 == "espanhol" && i2 == "portugues")) return true;
+    if ((i1 == "ingles" && i2 == "americano") || (i1 == "americano" && i2 == "ingles")) return true;
+    if ((i1 == "frances" && i2 == "italiano") || (i1 == "italiano" && i2 == "frances")) return true;
+    
+    return false;
+}
+
+bool duracaoSimilar(int duracao1, int duracao2) {
+    int diferenca = abs(duracao1 - duracao2);
+    return diferenca <= 60; // Diferença de até 1 minuto
+}
+
+bool popularidadeSimilar(int pop1, int pop2) {
+    return abs(pop1 - pop2) <= 2; // Diferença de até 2 pontos na escala
 }
 
 int calcularSimilaridade(const Musica& m1, const Musica& m2) {
     int score = 0;
-    if (m1.genero == m2.genero) score += 5;
-    if (m1.artista == m2.artista) score += 2;
-    if (m1.ano == m2.ano) score += 2;
-    else if (abs(m1.ano - m2.ano) <= 2) score += 1;
-    if (mesmaDecada(m1.ano, m2.ano)) score += 1;
-    if (artistaInternacional(m1.artista) && artistaInternacional(m2.artista)) score += 1;
-    if (palavrasEmComum(m1.titulo, m2.titulo)) score += 1;
+    
+    // Critério 1: Gênero exato (peso alto)
+    if (m1.genero == m2.genero) {
+        score += 8;
+    }
+    // Critério 2: Gêneros similares (peso médio)
+    else if (generosSimilares(m1.genero, m2.genero)) {
+        score += 5;
+    }
+    
+    // Critério 3: Artista exato (peso alto)
+    if (m1.artista == m2.artista) {
+        score += 7;
+    }
+    // Critério 4: Artistas similares (peso baixo)
+    else if (artistasSimilares(m1.artista, m2.artista)) {
+        score += 3;
+    }
+    
+    // Critério 5: Álbum exato (peso médio-alto)
+    if (m1.album == m2.album) {
+        score += 6;
+    }
+    // Critério 6: Álbuns similares (peso baixo-médio)
+    else if (albumsSimilares(m1.album, m2.album)) {
+        score += 3;
+    }
+    
+    // Critério 7: Idioma exato (peso médio-alto)
+    if (m1.idioma == m2.idioma) {
+        score += 6;
+    }
+    // Critério 8: Idiomas similares (peso baixo)
+    else if (idiomasSimilares(m1.idioma, m2.idioma)) {
+        score += 2;
+    }
+    
+    // Critério 9: Popularidade similar (peso médio)
+    if (m1.popularidade == m2.popularidade) {
+        score += 4;
+    }
+    else if (popularidadeSimilar(m1.popularidade, m2.popularidade)) {
+        score += 2;
+    }
+    
+    // Critério 10: Duração similar (peso baixo)
+    if (duracaoSimilar(m1.duracao, m2.duracao)) {
+        score += 3;
+    }
+    
+    // Critério 11: Ano exato (peso médio)
+    if (m1.ano == m2.ano) {
+        score += 4;
+    }
+    // Critério 12: Anos próximos (1-3 anos de diferença)
+    else if (abs(m1.ano - m2.ano) <= 3) {
+        score += 2;
+    }
+    // Critério 13: Anos bem próximos (4-7 anos de diferença)
+    else if (abs(m1.ano - m2.ano) <= 7) {
+        score += 1;
+    }
+    
+    // Critério 14: Mesma década (bônus adicional)
+    if (mesmaDecada(m1.ano, m2.ano) && abs(m1.ano - m2.ano) > 0) {
+        score += 2;
+    }
+    
+    // Critério 15: Mesmo século (bônus muito pequeno)
+    if (mesmoSeculo(m1.ano, m2.ano) && !mesmaDecada(m1.ano, m2.ano)) {
+        score += 1;
+    }
+    
+    // Critério 16: Música clássica/vintage (antes de 1970)
+    if (m1.ano < 1970 && m2.ano < 1970) {
+        score += 2;
+    }
+    
+    // Critério 17: Música moderna (após 2000)
+    if (m1.ano >= 2000 && m2.ano >= 2000) {
+        score += 1;
+    }
+    
+    // Bônus para hits populares (popularidade alta)
+    if (m1.popularidade >= 8 && m2.popularidade >= 8) {
+        score += 2;
+    }
+    
+    // Bônus para músicas de duração padrão (3-5 minutos)
+    if ((m1.duracao >= 180 && m1.duracao <= 300) && (m2.duracao >= 180 && m2.duracao <= 300)) {
+        score += 1;
+    }
+    
+    // Bônus extra para músicas do mesmo álbum e mesmo artista
+    if (m1.artista == m2.artista && m1.album == m2.album) {
+        score += 3;
+    }
+    
     return score;
 }
 
@@ -100,17 +237,29 @@ int carregarMusicas(Musica banco[], int max) {
     string linha;
     int total = 0;
     while (getline(file, linha) && total < max) {
+        if (linha.empty()) continue;
+        
         size_t pos1 = linha.find(';');
         size_t pos2 = linha.find(';', pos1 + 1);
         size_t pos3 = linha.find(';', pos2 + 1);
+        size_t pos4 = linha.find(';', pos3 + 1);
+        size_t pos5 = linha.find(';', pos4 + 1);
+        size_t pos6 = linha.find(';', pos5 + 1);
+        size_t pos7 = linha.find(';', pos6 + 1);
 
-        if (pos1 == string::npos || pos2 == string::npos || pos3 == string::npos) continue;
-
-        banco[total].titulo = linha.substr(0, pos1);
-        banco[total].artista = linha.substr(pos1 + 1, pos2 - pos1 - 1);
-        banco[total].genero = linha.substr(pos2 + 1, pos3 - pos2 - 1);
-        banco[total].ano = stoi(linha.substr(pos3 + 1));
-        total++;
+        // Verifica se tem todos os 8 campos necessários
+        if (pos7 != string::npos) {
+            // Formato: titulo;artista;album;genero;ano;idioma;popularidade;duracao
+            banco[total].titulo = linha.substr(0, pos1);
+            banco[total].artista = linha.substr(pos1 + 1, pos2 - pos1 - 1);
+            banco[total].album = linha.substr(pos2 + 1, pos3 - pos2 - 1);
+            banco[total].genero = linha.substr(pos3 + 1, pos4 - pos3 - 1);
+            banco[total].ano = stoi(linha.substr(pos4 + 1, pos5 - pos4 - 1));
+            banco[total].idioma = linha.substr(pos5 + 1, pos6 - pos5 - 1);
+            banco[total].popularidade = stoi(linha.substr(pos6 + 1, pos7 - pos6 - 1));
+            banco[total].duracao = stoi(linha.substr(pos7 + 1));
+            total++;
+        }
     }
 
     file.close();
@@ -120,7 +269,9 @@ int carregarMusicas(Musica banco[], int max) {
 void salvarMusica(const Musica& musica) {
     ofstream file("musicas.txt", ios::app);
     if (file.is_open()) {
-        file << musica.titulo << ";" << musica.artista << ";" << musica.genero << ";" << musica.ano << endl;
+        file << musica.titulo << ";" << musica.artista << ";" << musica.album << ";" 
+             << musica.genero << ";" << musica.ano << ";" << musica.idioma << ";" 
+             << musica.popularidade << ";" << musica.duracao << endl;
         file.close();
     }
 }
@@ -172,11 +323,14 @@ bool usuarioExiste(const string& usuario) {
 
 void recomendarPorArtista(const Musica banco[], int totalMusicas, const string& artistaBusca, Recomendacao recomendadas[], int& totalRecomendadas) {
     string generosUnicos[50];
+    string albumsUnicos[50];
     int totalGeneros = 0;
+    int totalAlbums = 0;
 
-    // Coleta os gêneros usados pelo artista
+    // Coleta gêneros e álbuns do artista
     for (int i = 0; i < totalMusicas; i++) {
         if (banco[i].artista == artistaBusca) {
+            // Coleta gêneros únicos
             bool jaTem = false;
             for (int j = 0; j < totalGeneros; j++) {
                 if (banco[i].genero == generosUnicos[j]) {
@@ -187,23 +341,56 @@ void recomendarPorArtista(const Musica banco[], int totalMusicas, const string& 
             if (!jaTem) {
                 generosUnicos[totalGeneros++] = banco[i].genero;
             }
+            
+            // Coleta álbuns únicos
+            bool jaTemAlbum = false;
+            for (int j = 0; j < totalAlbums; j++) {
+                if (banco[i].album == albumsUnicos[j]) {
+                    jaTemAlbum = true;
+                    break;
+                }
+            }
+            if (!jaTemAlbum) {
+                albumsUnicos[totalAlbums++] = banco[i].album;
+            }
         }
     }
 
-    // 1º adicionar músicas do mesmo artista
+    // Adiciona músicas do próprio artista
     for (int i = 0; i < totalMusicas; i++) {
         if (banco[i].artista == artistaBusca) {
-            recomendadas[totalRecomendadas++] = {banco[i], 5};
+            recomendadas[totalRecomendadas++] = {banco[i], 10};
         }
     }
 
-    // 2º adicionar músicas com o mesmo gênero, evitando duplicatas
+    // Adiciona artistas similares
     for (int i = 0; i < totalMusicas; i++) {
         if (banco[i].artista == artistaBusca) continue;
-        for (int j = 0; j < totalGeneros; j++) {
-            if (banco[i].genero == generosUnicos[j]) {
-                recomendadas[totalRecomendadas++] = {banco[i], 3};
+        if (artistasSimilares(banco[i].artista, artistaBusca)) {
+            recomendadas[totalRecomendadas++] = {banco[i], 6};
+        }
+    }
+
+    // Adiciona músicas de gêneros similares
+    for (int i = 0; i < totalMusicas; i++) {
+        if (banco[i].artista == artistaBusca) continue;
+        bool jaAdicionado = false;
+        
+        // Verifica se já foi adicionado como artista similar
+        for (int k = 0; k < totalRecomendadas; k++) {
+            if (banco[i].titulo == recomendadas[k].musica.titulo && 
+                banco[i].artista == recomendadas[k].musica.artista) {
+                jaAdicionado = true;
                 break;
+            }
+        }
+        
+        if (!jaAdicionado) {
+            for (int j = 0; j < totalGeneros; j++) {
+                if (banco[i].genero == generosUnicos[j]) {
+                    recomendadas[totalRecomendadas++] = {banco[i], 4};
+                    break;
+                }
             }
         }
     }
@@ -212,14 +399,20 @@ void recomendarPorArtista(const Musica banco[], int totalMusicas, const string& 
 void salvarRecomendacoes(const string& usuario, const Musica& base, Recomendacao recomendadas[], int total) {
     ofstream file("recomendacoes.txt", ios::app);
     if (file.is_open()) {
-        file << "Usuário: " << usuario << endl;
-        file << "Base: " << base.titulo << " - " << base.artista << endl;
-        file << "Recomendações:" << endl;
+        file << "Usuario: " << usuario << endl;
+        file << "Base: " << base.titulo << " - " << base.artista << " - " << base.album
+             << " (" << base.idioma << ", " << base.ano << ", Pop: " << base.popularidade 
+             << ", " << base.duracao << "s)" << endl;
+        file << "Recomendacoes:" << endl;
         for (int i = 0; i < total; i++) {
             file << "- " << recomendadas[i].musica.titulo << " | "
                  << recomendadas[i].musica.artista << " | "
+                 << recomendadas[i].musica.album << " | "
                  << recomendadas[i].musica.genero << " | "
-                 << recomendadas[i].musica.ano << " | Similaridade: "
+                 << recomendadas[i].musica.ano << " | "
+                 << recomendadas[i].musica.idioma << " | Pop: "
+                 << recomendadas[i].musica.popularidade << " | "
+                 << recomendadas[i].musica.duracao << "s | Similaridade: "
                  << recomendadas[i].similaridade << endl;
         }
         file << "--------------------------" << endl;
@@ -230,12 +423,12 @@ void salvarRecomendacoes(const string& usuario, const Musica& base, Recomendacao
 // ----------- Função Principal -----------
 
 int main() {
-    const int MAX_MUSICAS = 100;
+    const int MAX_MUSICAS = 200;
     Musica banco[MAX_MUSICAS];
     int totalMusicas = carregarMusicas(banco, MAX_MUSICAS);
 
     if (totalMusicas == 0) {
-        cout << "Nenhuma música carregada. O banco está vazio.\n";
+        cout << "Nenhuma musica carregada. O banco esta vazio.\n";
     }
 
     string usuario, senha;
@@ -250,10 +443,10 @@ int main() {
 
     if (opcaoLogin == 1) {
         do {
-            cout << "Digite um nome de usuário: ";
+            cout << "Digite um nome de usuario: ";
             getline(cin, usuario);
             if (usuarioExiste(usuario)) {
-                cout << "Este nome de usuário já existe. Escolha outro.\n";
+                cout << "Este nome de usuario ja existe. Escolha outro.\n";
             }
         } while (usuarioExiste(usuario));
 
@@ -264,7 +457,7 @@ int main() {
     }
 
     cout << "\n=== Login ===\n";
-    cout << "Usuário: ";
+    cout << "Usuario: ";
     getline(cin, usuario);
     cout << "Senha: ";
     getline(cin, senha);
@@ -277,9 +470,9 @@ int main() {
     cout << "\nLogin bem-sucedido! Bem-vindo, " << usuario << "!\n";
 
     int tipoPesquisa;
-    cout << "\n=== Como deseja obter recomendações? ===\n";
-    cout << "1. Com base em uma música\n";
-    cout << "2. Com base em um gênero\n";
+    cout << "\n=== Como deseja obter recomendacoes? ===\n";
+    cout << "1. Com base em uma musica\n";
+    cout << "2. Com base em um genero\n";
     cout << "3. Com base em um artista\n";
     cout << "Escolha: ";
     cin >> tipoPesquisa;
@@ -291,8 +484,8 @@ int main() {
 
     if (tipoPesquisa == 1) {
         string tituloBusca;
-        cout << "\n=== Buscar ou Adicionar Música ===\n";
-        cout << "Título da música: ";
+        cout << "\n=== Buscar ou Adicionar Musica ===\n";
+        cout << "Titulo da musica: ";
         getline(cin, tituloBusca);
         cout << "Artista: ";
         getline(cin, artistaBusca);
@@ -302,96 +495,119 @@ int main() {
 
         int indice = buscarMusica(banco, totalMusicas, tituloBusca, artistaBusca);
         if (indice != -1) {
-            cout << "\nMúsica encontrada no banco! Usando ela como base para recomendação.\n";
+            cout << "\nMusica encontrada no banco! Usando ela como base para recomendacao.\n";
             musicaEscolhida = banco[indice];
         } else {
-            cout << "\nMúsica não encontrada no banco.\n";
+            cout << "\nMusica nao encontrada no banco.\n";
             musicaEscolhida.titulo = tituloBusca;
             musicaEscolhida.artista = capitalizarPalavras(artistaBusca);
 
-            cout << "Digite o gênero da música: ";
+            cout << "Digite o nome do album: ";
+            getline(cin, musicaEscolhida.album);
+            musicaEscolhida.album = capitalizarPalavras(musicaEscolhida.album);
+
+            cout << "Digite o genero da musica: ";
             getline(cin, musicaEscolhida.genero);
             musicaEscolhida.genero = capitalizarPalavras(musicaEscolhida.genero);
 
-            cout << "Digite o ano da música: ";
+            cout << "Digite o ano da musica: ";
             while (!(cin >> musicaEscolhida.ano)) {
-                cout << "Ano inválido. Digite novamente: ";
+                cout << "Ano invalido. Digite novamente: ";
+                cin.clear();
+                while (cin.get() != '\n');
+            }
+            cin.ignore();
+
+            cout << "Digite o idioma da musica: ";
+            getline(cin, musicaEscolhida.idioma);
+            musicaEscolhida.idioma = capitalizarPalavras(musicaEscolhida.idioma);
+
+            cout << "Digite a popularidade da musica (1-10): ";
+            while (!(cin >> musicaEscolhida.popularidade) || musicaEscolhida.popularidade < 1 || musicaEscolhida.popularidade > 10) {
+                cout << "Popularidade invalida (deve ser entre 1 e 10). Digite novamente: ";
+                cin.clear();
+                while (cin.get() != '\n');
+            }
+            cin.ignore();
+
+            cout << "Digite a duracao da musica em segundos: ";
+            while (!(cin >> musicaEscolhida.duracao) || musicaEscolhida.duracao <= 0) {
+                cout << "Duracao invalida. Digite novamente: ";
                 cin.clear();
                 while (cin.get() != '\n');
             }
             cin.ignore();
 
             salvarMusica(musicaEscolhida);
-            cout << "Música adicionada com sucesso!\n";
+            cout << "Musica adicionada com sucesso!\n";
 
             totalMusicas = carregarMusicas(banco, MAX_MUSICAS);
         }
 
     } else if (tipoPesquisa == 2) {
         usarSimilaridade = false;
-        cout << "\nDigite o gênero para recomendação: ";
+        cout << "\nDigite o genero para recomendacao: ";
         getline(cin, generoBusca);
         generoBusca = capitalizarPalavras(generoBusca);
     } else if (tipoPesquisa == 3) {
         usarSimilaridade = false;
-        cout << "\nDigite o nome do artista para recomendação: ";
+        cout << "\nDigite o nome do artista para recomendacao: ";
         getline(cin, artistaBusca);
         artistaBusca = capitalizarPalavras(artistaBusca);
     } else {
-        cout << "Opção inválida. Encerrando.\n";
+        cout << "Opcao invalida. Encerrando.\n";
         return 1;
     }
 
     Recomendacao recomendadas[MAX_MUSICAS];
     int totalRecomendadas = 0;
 
-    for (int i = 0; i < totalMusicas; i++) {
-        bool adicionar = false;
-        int score = 0;
-
-        if (usarSimilaridade) {
-            if (paraMinusculas(banco[i].titulo) == paraMinusculas(musicaEscolhida.titulo) &&
-                paraMinusculas(banco[i].artista) == paraMinusculas(musicaEscolhida.artista))
-                continue;
-
-            score = calcularSimilaridade(musicaEscolhida, banco[i]);
-            if (score > 0) adicionar = true;
-        } else if (!generoBusca.empty()) {
-            if (banco[i].genero == generoBusca) {
-                adicionar = true;
-                score = 5;
-            }
-        } else if (!artistaBusca.empty()) {
-            break; // pula para lógica especial
-        }
-
-        if (adicionar) {
-            recomendadas[totalRecomendadas++] = {banco[i], score};
-        }
-    }
-
-    // Se pesquisa por artista, executa recomendação especializada
-    if (!usarSimilaridade && !artistaBusca.empty()) {
-        totalRecomendadas = 0;
+    // Processamento das recomendações baseado no tipo de pesquisa
+    if (tipoPesquisa == 3) { // Por artista
         recomendarPorArtista(banco, totalMusicas, artistaBusca, recomendadas, totalRecomendadas);
-    }
+    } else {
+        for (int i = 0; i < totalMusicas; i++) {
+            bool adicionar = false;
+            int score = 0;
 
-    if (usarSimilaridade) {
-        for (int i = 0; i < totalRecomendadas - 1; i++) {
-            for (int j = 0; j < totalRecomendadas - i - 1; j++) {
-                if (recomendadas[j].similaridade < recomendadas[j + 1].similaridade) {
-                    Recomendacao temp = recomendadas[j];
-                    recomendadas[j] = recomendadas[j + 1];
-                    recomendadas[j + 1] = temp;
+            if (usarSimilaridade) { // Por música
+                if (paraMinusculas(banco[i].titulo) == paraMinusculas(musicaEscolhida.titulo) &&
+                    paraMinusculas(banco[i].artista) == paraMinusculas(musicaEscolhida.artista))
+                    continue;
+
+                score = calcularSimilaridade(musicaEscolhida, banco[i]);
+                if (score > 0) adicionar = true;
+            } else if (!generoBusca.empty()) { // Por gênero
+                if (banco[i].genero == generoBusca) {
+                    adicionar = true;
+                    score = 8;
+                } else if (generosSimilares(banco[i].genero, generoBusca)) {
+                    adicionar = true;
+                    score = 5;
                 }
             }
+
+            if (adicionar) {
+                recomendadas[totalRecomendadas++] = {banco[i], score};
+            }
         }
     }
 
-    cout << "\n=== Recomendações ===\n\n";
+    // Ordenação por similaridade (bubble sort)
+    for (int i = 0; i < totalRecomendadas - 1; i++) {
+        for (int j = 0; j < totalRecomendadas - i - 1; j++) {
+            if (recomendadas[j].similaridade < recomendadas[j + 1].similaridade) {
+                Recomendacao temp = recomendadas[j];
+                recomendadas[j] = recomendadas[j + 1];
+                recomendadas[j + 1] = temp;
+            }
+        }
+    }
+
+    cout << "\n=== Recomendacoes ===\n\n";
 
     if (totalRecomendadas == 0) {
-        cout << "Nenhuma recomendação encontrada.\n";
+        cout << "Nenhuma recomendacao encontrada.\n";
     } else {
         int exibidas = 0;
         char resposta;
@@ -399,27 +615,32 @@ int main() {
         do {
             int quantidade = (totalRecomendadas - exibidas >= 5) ? 5 : totalRecomendadas - exibidas;
             for (int i = 0; i < quantidade; i++) {
+                int minutos = recomendadas[exibidas + i].musica.duracao / 60;
+                int segundos = recomendadas[exibidas + i].musica.duracao % 60;
                 cout << "- " << recomendadas[exibidas + i].musica.titulo << " | "
                      << recomendadas[exibidas + i].musica.artista << " | "
+                     << recomendadas[exibidas + i].musica.album << " | "
                      << recomendadas[exibidas + i].musica.genero << " | "
-                     << recomendadas[exibidas + i].musica.ano
+                     << recomendadas[exibidas + i].musica.ano << " | "
+                     << recomendadas[exibidas + i].musica.idioma << " | Pop: "
+                     << recomendadas[exibidas + i].musica.popularidade << " | "
+                     << minutos << ":" << (segundos < 10 ? "0" : "") << segundos
                      << " | Similaridade: " << recomendadas[exibidas + i].similaridade << endl;
             }
 
             exibidas += quantidade;
 
             if (exibidas >= totalRecomendadas) {
-                cout << "\nFim das recomendações.\n";
+                cout << "\nFim das recomendacoes.\n";
                 break;
             }
 
-            cout << "\nDeseja ver mais recomendações? (s/n): ";
+            cout << "\nDeseja ver mais recomendacoes? (s/n): ";
             cin >> resposta;
 
         } while (resposta == 's' || resposta == 'S');
 
         salvarRecomendacoes(usuario, musicaEscolhida, recomendadas, totalRecomendadas);
-        cout << "\nRecomendações salvas no arquivo 'recomendacoes.txt'.\n";
     }
 
     return 0;

@@ -1,95 +1,170 @@
-Shape of You;Ed Sheeran;Pop;2017
-Perfect;Ed Sheeran;Pop;2017
-Bohemian Rhapsody;Queen;Rock;1975
-Another One Bites the Dust;Queen;Rock;1980
-Blinding Lights;The Weeknd;Pop;2020
-Stairway to Heaven;Led Zeppelin;Rock;1971
-Photograph;Ed Sheeran;Pop;2015
-Smells Like Teen Spirit;Nirvana;Grunge;1991
-Happier;Ed Sheeran;Pop;2017
-Hotel California;Eagles;Rock;1976
-Bad Guy;Billie Eilish;Pop;2019
-Billie Jean;Michael Jackson;Pop;1982
-Sweet Child O' Mine;Guns N' Roses;Rock;1987
-Thinking Out Loud;Ed Sheeran;Pop;2014
-Thriller;Michael Jackson;Pop;1982
-Wonderwall;Oasis;Rock;1995
-Rolling in the Deep;Adele;Pop;2010
-Imagine;John Lennon;Rock;1971
-Take On Me;A-ha;Pop;1985
-Beat It;Michael Jackson;Pop;1982
-Hallelujah;Leonard Cohen;Folk;1984
-Smooth Operator;Sade;Jazz;1984
-Hotel Yorba;The White Stripes;Rock;2001
-Enter Sandman;Metallica;Metal;1991
-Lose Yourself;Eminem;Rap;2002
-All of Me;John Legend;R&B;2013
-Firework;Katy Perry;Pop;2010
-Shape of My Heart;Backstreet Boys;Pop;2000
-Hey Jude;The Beatles;Rock;1968
-Toxic;Britney Spears;Pop;2003
-Someone Like You;Adele;Pop;2011
-Africa;Toto;Rock;1982
-Smooth;Santana;Rock;1999
-My Heart Will Go On;Celine Dion;Pop;1997
-Viva La Vida;Coldplay;Pop Rock;2008
-Chandelier;Sia;Pop;2014
-Boogie Wonderland;Earth, Wind & Fire;Disco;1979
-Stayin' Alive;Bee Gees;Disco;1977
-Tennessee Whiskey;Chris Stapleton;Country;2015
-Before He Cheats;Carrie Underwood;Country;2005
-Zombie;The Cranberries;Rock;1994
-Creep;Radiohead;Alternative;1992
-Clocks;Coldplay;Pop Rock;2002
-All Star;Smash Mouth;Pop Rock;1999
-Hey Ya!;OutKast;Hip Hop;2003
-Sugar;Maroon 5;Pop;2014
-Rolling in the Deep;Adele;Pop;2010
-Counting Stars;OneRepublic;Pop Rock;2013
-Call Me Maybe;Carly Rae Jepsen;Pop;2011
-Blurred Lines;Robin Thicke;Pop;2013
-Radioactive;Imagine Dragons;Alternative;2012
-Uptown Funk;Mark Ronson;Funk;2014
-Can't Stop;Red Hot Chili Peppers;Rock;2002
-Back in Black;AC/DC;Rock;1980
-Sweet Home Alabama;Lynyrd Skynyrd;Rock;1974
-Livin' on a Prayer;Bon Jovi;Rock;1986
-Born to Run;Bruce Springsteen;Rock;1975
-Paint It Black;The Rolling Stones;Rock;1966
-Light My Fire;The Doors;Rock;1967
-Jump;Van Halen;Rock;1984
-Paranoid;Black Sabbath;Metal;1970
-Iron Man;Black Sabbath;Metal;1970
-Master of Puppets;Metallica;Metal;1986
-Nothing Else Matters;Metallica;Metal;1991
-One;Metallica;Metal;1988
-The Unforgiven;Metallica;Metal;1991
-Enter Sandman;Metallica;Metal;1991
-Blackbird;The Beatles;Rock;1968
-Come Together;The Beatles;Rock;1969
-Let It Be;The Beatles;Rock;1970
-Yesterday;The Beatles;Rock;1965
-Imagine;John Lennon;Rock;1971
-Purple Rain;Prince;Pop;1984
-When Doves Cry;Prince;Pop;1984
-Kiss;Prince;Pop;1986
-Thriller;Michael Jackson;Pop;1982
-Smooth Criminal;Michael Jackson;Pop;1987
-Beat It;Michael Jackson;Pop;1982
-Bad;Michael Jackson;Pop;1987
-Human Nature;Michael Jackson;Pop;1982
-Man in the Mirror;Michael Jackson;Pop;1987
-I Will Always Love You;Whitney Houston;Pop;1992
-Greatest Love of All;Whitney Houston;Pop;1986
-How Will I Know;Whitney Houston;Pop;1985
-Rolling in the Deep;Adele;Pop;2010
-Hello;Adele;Pop;2015
-Someone Like You;Adele;Pop;2011
-Set Fire to the Rain;Adele;Pop;2011
-Hello;Lionel Richie;Pop;1984
-All Night Long;Lionel Richie;Pop;1983
-Dancing on the Ceiling;Lionel Richie;Pop;1986
-Careless Whisper;George Michael;Pop;1984
-Faith;George Michael;Pop;1987
-Wake Me Up Before You Go-Go;Wham!;Pop;1984
-Last Christmas;Wham!;Pop;1984
+Bohemian Rhapsody;Queen;A Night at the Opera;Rock;1975;Ingles;10;355
+Imagine;John Lennon;Imagine;Rock;1971;Ingles;10;183
+Hotel California;Eagles;Hotel California;Rock;1976;Ingles;9;391
+Stairway To Heaven;Led Zeppelin;Led Zeppelin IV;Rock;1971;Ingles;10;482
+Sweet Child O Mine;Guns N Roses;Appetite for Destruction;Rock;1987;Ingles;9;356
+Smells Like Teen Spirit;Nirvana;Nevermind;Rock;1991;Ingles;9;301
+Wonderwall;Oasis;(What's the Story) Morning Glory?;Rock;1995;Ingles;8;258
+Yesterday;The Beatles;Help!;Pop Rock;1965;Ingles;10;125
+Hey Jude;The Beatles;The Beatles (White Album);Pop Rock;1968;Ingles;9;431
+Let It Be;The Beatles;Let It Be;Pop Rock;1970;Ingles;9;243
+Billie Jean;Michael Jackson;Thriller;Pop;1982;Ingles;10;294
+Thriller;Michael Jackson;Thriller;Pop;1982;Ingles;9;357
+Beat It;Michael Jackson;Thriller;Pop;1982;Ingles;8;258
+Bad;Michael Jackson;Bad;Pop;1987;Ingles;8;246
+Smooth Criminal;Michael Jackson;Bad;Pop;1988;Ingles;8;417
+Like A Rolling Stone;Bob Dylan;Highway 61 Revisited;Folk;1965;Ingles;9;370
+Blowin In The Wind;Bob Dylan;The Freewheelin' Bob Dylan;Folk;1963;Ingles;8;169
+The Times They Are A Changin;Bob Dylan;The Times They Are a-Changin';Folk;1964;Ingles;7;194
+Purple Haze;Jimi Hendrix;Are You Experienced;Rock;1967;Ingles;9;169
+All Along The Watchtower;Jimi Hendrix;Electric Ladyland;Rock;1968;Ingles;8;240
+What A Wonderful World;Louis Armstrong;What a Wonderful World;Jazz;1967;Ingles;8;138
+Summertime;Ella Fitzgerald;Ella Fitzgerald Sings the George and Ira Gershwin Song Book;Jazz;1957;Ingles;7;193
+Fly Me To The Moon;Frank Sinatra;It Might as Well Be Swing;Jazz;1964;Ingles;8;148
+My Way;Frank Sinatra;My Way;Jazz;1969;Ingles;8;275
+The Girl From Ipanema;Stan Getz;Getz/Gilberto;Bossa Nova;1964;Ingles;7;304
+Wave;Antonio Carlos Jobim;Wave;Bossa Nova;1967;Portugues;6;201
+Corcovado;Antonio Carlos Jobim;The Composer of Desafinado Plays;Bossa Nova;1960;Portugues;7;152
+Desafinado;Joao Gilberto;Chega de Saudade;Bossa Nova;1958;Portugues;7;176
+Mas Que Nada;Jorge Ben Jor;Samba Esquema Novo;Samba;1963;Portugues;8;164
+Aquarela Do Brasil;Ary Barroso;Single;Samba;1939;Portugues;8;198
+Garota De Ipanema;Tom Jobim;The Composer of Desafinado Plays;Bossa Nova;1962;Portugues;9;175
+Chega De Saudade;Joao Gilberto;Chega de Saudade;Bossa Nova;1958;Portugues;8;142
+Carinhoso;Pixinguinha;Single;Samba;1917;Portugues;7;163
+Ai Se Eu Te Pego;Michel Telo;Na Balada;Sertanejo;2011;Portugues;7;176
+Evidencias;Chitaozinho E Xororo;Cowboys do Asfalto;Sertanejo;1990;Portugues;8;264
+Asa Branca;Luiz Gonzaga;Single;Forro;1947;Portugues;9;187
+Baiao;Luiz Gonzaga;Single;Forro;1946;Portugues;8;152
+Admiravel Chip Novo;Pitty;Admirável Chip Novo;Rock;2003;Portugues;7;223
+Tempo Perdido;Legiao Urbana;Dois;Rock;1986;Portugues;9;298
+Pais E Filhos;Legiao Urbana;As Quatro Estações;Rock;1989;Portugues;8;311
+Ainda E Cedo;Legiao Urbana;Legião Urbana;Rock;1985;Portugues;7;194
+Eduardo E Monica;Legiao Urbana;Dois;Rock;1986;Portugues;8;269
+Comida;Titas;Jesus Não Tem Dentes no País dos Banguelas;Rock;1987;Portugues;8;231
+Epitafio;Titas;Cabeça Dinossauro;Rock;1989;Portugues;7;265
+AA UU;Titas;Titãs;Rock;1984;Portugues;6;187
+O Que E O Que E;Gonzaguinha;Caminhos do Coração;MPB;1982;Portugues;8;256
+Caminhos Do Coracao;Gonzaguinha;Caminhos do Coração;MPB;1982;Portugues;7;243
+Aquele Abraco;Gilberto Gil;Gilberto Gil;MPB;1969;Portugues;8;189
+Toda Menina Baiana;Gilberto Gil;Realce;MPB;1979;Portugues;7;234
+Tropicalia;Caetano Veloso;Tropicália ou Panis et Circencis;MPB;1968;Portugues;7;201
+Alegria Alegria;Caetano Veloso;Caetano Veloso;MPB;1967;Portugues;8;176
+Sampa;Caetano Veloso;Muito (Dentro da Estrela Azulada);MPB;1978;Portugues;7;298
+Construcao;Chico Buarque;Construção;MPB;1971;Portugues;9;367
+Apesar De Voce;Chico Buarque;Chico Buarque de Hollanda - Volume 4;MPB;1970;Portugues;8;238
+Calice;Chico Buarque;Chico Buarque & Caetano Veloso ao Vivo;MPB;1973;Portugues;8;298
+Como Nossos Pais;Elis Regina;Falso Brilhante;MPB;1976;Portugues;8;187
+Aguas De Marco;Elis Regina;Elis;MPB;1972;Portugues;8;201
+Satisfaction;The Rolling Stones;Out of Our Heads;Rock;1965;Ingles;9;223
+Paint It Black;The Rolling Stones;Aftermath;Rock;1966;Ingles;8;202
+Start Me Up;The Rolling Stones;Tattoo You;Rock;1981;Ingles;7;213
+Gimme Shelter;The Rolling Stones;Let It Bleed;Rock;1969;Ingles;8;272
+Angie;The Rolling Stones;Goats Head Soup;Rock;1973;Ingles;7;272
+Brown Sugar;The Rolling Stones;Sticky Fingers;Rock;1971;Ingles;7;229
+Smoke On The Water;Deep Purple;Machine Head;Rock;1972;Ingles;9;338
+Highway To Hell;AC DC;Highway to Hell;Rock;1979;Ingles;9;208
+Back In Black;AC DC;Back in Black;Rock;1980;Ingles;8;255
+Thunderstruck;AC DC;The Razors Edge;Rock;1990;Ingles;8;292
+Another Brick In The Wall;Pink Floyd;The Wall;Rock;1979;Ingles;9;238
+Wish You Were Here;Pink Floyd;Wish You Were Here;Rock;1975;Ingles;8;334
+Money;Pink Floyd;The Dark Side of the Moon;Rock;1973;Ingles;8;382
+Comfortably Numb;Pink Floyd;The Wall;Rock;1979;Ingles;8;382
+Time;Pink Floyd;The Dark Side of the Moon;Rock;1973;Ingles;7;421
+Californication;Red Hot Chili Peppers;Californication;Rock;1999;Ingles;8;329
+Under The Bridge;Red Hot Chili Peppers;Blood Sugar Sex Magik;Rock;1991;Ingles;8;284
+Give It Away;Red Hot Chili Peppers;Blood Sugar Sex Magik;Rock;1991;Ingles;7;283
+Scar Tissue;Red Hot Chili Peppers;Californication;Rock;1999;Ingles;7;217
+Creep;Radiohead;Pablo Honey;Rock;1992;Ingles;8;238
+Karma Police;Radiohead;OK Computer;Rock;1997;Ingles;7;261
+Paranoid Android;Radiohead;OK Computer;Rock;1997;Ingles;7;383
+High And Dry;Radiohead;The Bends;Rock;1995;Ingles;6;274
+No Surprises;Radiohead;OK Computer;Rock;1997;Ingles;6;229
+Black;Pearl Jam;Ten;Rock;1991;Ingles;8;348
+Alive;Pearl Jam;Ten;Rock;1991;Ingles;7;341
+Jeremy;Pearl Jam;Ten;Rock;1991;Ingles;7;319
+Better Man;Pearl Jam;Vitalogy;Rock;1994;Ingles;7;253
+Even Flow;Pearl Jam;Ten;Rock;1991;Ingles;7;293
+Enter Sandman;Metallica;Metallica (Black Album);Heavy Metal;1991;Ingles;9;331
+Master Of Puppets;Metallica;Master of Puppets;Heavy Metal;1986;Ingles;8;515
+One;Metallica;...And Justice for All;Heavy Metal;1988;Ingles;8;446
+Nothing Else Matters;Metallica;Metallica (Black Album);Heavy Metal;1991;Ingles;8;388
+Fade To Black;Metallica;Ride the Lightning;Heavy Metal;1984;Ingles;7;417
+Paranoid;Black Sabbath;Paranoid;Heavy Metal;1970;Ingles;8;170
+Iron Man;Black Sabbath;Paranoid;Heavy Metal;1970;Ingles;8;355
+War Pigs;Black Sabbath;Paranoid;Heavy Metal;1970;Ingles;7;477
+Sweet Dreams;Eurythmics;Sweet Dreams (Are Made of This);Pop;1983;Ingles;8;216
+Tainted Love;Soft Cell;Non-Stop Erotic Cabaret;Pop;1981;Ingles;7;202
+Blue Monday;New Order;Power, Corruption & Lies;Eletronica;1983;Ingles;7;448
+Love Will Tear Us Apart;Joy Division;Closer;Rock;1980;Ingles;7;206
+Bizarre Love Triangle;New Order;Brotherhood;Eletronica;1986;Ingles;6;263
+True;Spandau Ballet;True;Pop;1983;Ingles;7;304
+Gold;Spandau Ballet;True;Pop;1983;Ingles;6;233
+Careless Whisper;George Michael;Make It Big;Pop;1984;Ingles;8;301
+Faith;George Michael;Faith;Pop;1987;Ingles;7;211
+Freedom;George Michael;Listen Without Prejudice Vol. 1;Pop;1990;Ingles;6;370
+Like A Prayer;Madonna;Like a Prayer;Pop;1989;Ingles;8;339
+Material Girl;Madonna;Like a Virgin;Pop;1984;Ingles;7;240
+Vogue;Madonna;I'm Breathless;Pop;1990;Ingles;7;312
+Holiday;Madonna;Madonna;Pop;1983;Ingles;6;246
+La Isla Bonita;Madonna;True Blue;Pop;1986;Ingles;7;240
+Take On Me;A-ha;Hunting High and Low;Pop;1985;Ingles;8;226
+The Sun Always Shines On TV;A-ha;Hunting High and Low;Pop;1985;Ingles;6;305
+Hunting High And Low;A-ha;Hunting High and Low;Pop;1985;Ingles;5;216
+Total Eclipse Of The Heart;Bonnie Tyler;Faster Than the Speed of Night;Rock;1983;Ingles;7;421
+Holding Out For A Hero;Bonnie Tyler;Secret Dreams and Forbidden Fire;Rock;1984;Ingles;6;358
+I Want To Know What Love Is;Foreigner;Agent Provocateur;Rock;1984;Ingles;7;300
+Cold As Ice;Foreigner;Foreigner;Rock;1977;Ingles;6;199
+Urgent;Foreigner;4;Rock;1981;Ingles;5;274
+Africa;Toto;Toto IV;Rock;1982;Ingles;8;295
+Rosanna;Toto;Toto IV;Rock;1982;Ingles;6;332
+Hold The Line;Toto;Toto;Rock;1978;Ingles;6;237
+Eye Of The Tiger;Survivor;Eye of the Tiger;Rock;1982;Ingles;8;245
+Burning Heart;Survivor;Vital Signs;Rock;1985;Ingles;6;229
+The Search Is Over;Survivor;Vital Signs;Rock;1984;Ingles;5;242
+More Than A Feeling;Boston;Boston;Rock;1976;Ingles;7;285
+Peace Of Mind;Boston;Boston;Rock;1976;Ingles;6;310
+Foreplay Long Time;Boston;Boston;Rock;1976;Ingles;5;461
+Dont Stop Believin;Journey;Escape;Rock;1981;Ingles;8;251
+Any Way You Want It;Journey;Departure;Rock;1980;Ingles;7;219
+Open Arms;Journey;Escape;Rock;1981;Ingles;6;197
+Separate Ways;Journey;Frontiers;Rock;1983;Ingles;6;325
+Faithfully;Journey;Frontiers;Rock;1983;Ingles;6;269
+We Are The Champions;Queen;News of the World;Rock;1977;Ingles;9;179
+We Will Rock You;Queen;News of the World;Rock;1977;Ingles;9;122
+Another One Bites The Dust;Queen;The Game;Rock;1980;Ingles;8;215
+Crazy Little Thing Called Love;Queen;The Game;Rock;1979;Ingles;7;163
+Somebody To Love;Queen;A Day at the Races;Rock;1976;Ingles;8;296
+Radio Ga Ga;Queen;The Works;Rock;1984;Ingles;7;343
+I Want To Break Free;Queen;The Works;Rock;1984;Ingles;7;199
+Under Pressure;Queen;Hot Space;Rock;1981;Ingles;8;248
+Killer Queen;Queen;Sheer Heart Attack;Rock;1974;Ingles;7;180
+Dont Stop Me Now;Queen;Jazz;Rock;1978;Ingles;8;209
+Be Yourself;Audioslave;Out of Exile;Grunge;2005;Ingles;6;282
+Last Kiss;Pearl Jam;Last Kiss;Rock;1999;Ingles;7;195
+The Best Of Queen;Queen;Greatest Hits;Rock;1981;Ingles;9;240
+Love Of My Life;Queen;Best Of Queen;Rock;1975;Ingles;8;218
+Dancing Queen;ABBA;ABBA Greatest Hits;Pop;1976;Ingles;8;231
+Mamma Mia;ABBA;The Best Of ABBA;Pop;1975;Ingles;7;213
+Money For Nothing;Dire Straits;Brothers in Arms Greatest Hits;Rock;1985;Ingles;8;502
+Sultans Of Swing;Dire Straits;Best Of Dire Straits;Rock;1978;Ingles;9;355
+Freebird;Lynyrd Skynyrd;One More from the Road Live;Rock;1976;Ingles;9;560
+Sweet Home Alabama;Lynyrd Skynyrd;Live at Fillmore East;Rock;1973;Ingles;8;284
+Asa Branca;Luiz Gonzaga;Ao Vivo no Nordeste;Forro;1978;Portugues;9;198
+Baiao;Luiz Gonzaga;Live in Recife;Forro;1980;Portugues;8;167
+Construcao;Chico Buarque;Ao Vivo Paris;MPB;1974;Portugues;9;389
+Apesar De Voce;Chico Buarque;Live at Canecao;MPB;1972;Portugues;8;245
+Alive;Pearl Jam;Live on Two Legs;Rock;1998;Ingles;8;376
+Black;Pearl Jam;Ao Vivo MTV;Rock;1992;Ingles;8;362
+Black;Pearl Jam;MTV Unplugged;Rock;1992;Ingles;8;334
+Alive;Pearl Jam;Unplugged in New York;Rock;1992;Ingles;7;325
+Layla;Eric Clapton;MTV Unplugged;Rock;1992;Ingles;9;443
+Tears In Heaven;Eric Clapton;Unplugged;Rock;1992;Ingles;8;282
+Hurt;Johnny Cash;American IV Unplugged;Folk;2002;Ingles;9;218
+The Man Comes Around;Johnny Cash;Unplugged Sessions;Folk;2002;Ingles;7;264
+Tempo Perdido;Legiao Urbana;Acustico MTV;Rock;1999;Portugues;9;312
+Eduardo E Monica;Legiao Urbana;Acustico;Rock;1999;Portugues;8;285
+Epitafio;Titas;Acustico MTV;Rock;1997;Portugues;8;289
+Comida;Titas;Unplugged;Rock;1997;Portugues;8;245
+Nutshell;Alice In Chains;Unplugged;Rock;1996;Ingles;6;297
+Would?;Alice In Chains;Unplugged;Rock;1996;Ingles;8;223
+Man In The Box;Alice In Chains;Facelift;Rock;1990;Ingles;8;285
