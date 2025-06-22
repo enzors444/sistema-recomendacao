@@ -56,22 +56,10 @@ bool mesmoSeculo(int ano1, int ano2) {
     return (ano1 / 100) == (ano2 / 100);
 }
 
-bool artistasSimilares(const string& artista1, const string& artista2) {
-    // Verifica se um artista contém o outro (bandas com nomes similares)
-    string a1 = paraMinusculas(artista1);
-    string a2 = paraMinusculas(artista2);
-    
-    // Se um nome está contido no outro e tem pelo menos 4 caracteres
-    if (a1.length() >= 4 && a2.find(a1) != string::npos) return true;
-    if (a2.length() >= 4 && a1.find(a2) != string::npos) return true;
-    
-    return false;
-}
 
 bool albumsSimilares(const string& album1, const string& album2) {
     string a1 = paraMinusculas(album1);
     string a2 = paraMinusculas(album2);
-    
     
     // Álbuns relacionados comuns
     if ((a1.find("greatest hits") != string::npos && a2.find("best of") != string::npos) ||
@@ -138,30 +126,26 @@ int calcularSimilaridade(const Musica& m1, const Musica& m2) {
     if (m1.artista == m2.artista) {
         score += 7;
     }
-    // Critério 4: Artistas similares (peso baixo)
-    else if (artistasSimilares(m1.artista, m2.artista)) {
-        score += 3;
-    }
     
-    // Critério 5: Álbum exato (peso médio-alto)
+    // Critério 4: Álbum exato (peso médio-alto)
     if (m1.album == m2.album) {
         score += 6;
     }
-    // Critério 6: Álbuns similares (peso baixo-médio)
+    // Critério 5: Álbuns similares (peso baixo-médio)
     else if (albumsSimilares(m1.album, m2.album)) {
         score += 3;
     }
     
-    // Critério 7: Idioma exato (peso médio-alto)
+    // Critério 6: Idioma exato (peso médio-alto)
     if (m1.idioma == m2.idioma) {
         score += 6;
     }
-    // Critério 8: Idiomas similares (peso baixo)
+    // Critério 7: Idiomas similares (peso baixo)
     else if (idiomasSimilares(m1.idioma, m2.idioma)) {
         score += 2;
     }
     
-    // Critério 9: Popularidade similar (peso médio)
+    // Critério 8: Popularidade similar (peso médio)
     if (m1.popularidade == m2.popularidade) {
         score += 4;
     }
@@ -169,40 +153,40 @@ int calcularSimilaridade(const Musica& m1, const Musica& m2) {
         score += 2;
     }
     
-    // Critério 10: Duração similar (peso baixo)
+    // Critério 9: Duração similar (peso baixo)
     if (duracaoSimilar(m1.duracao, m2.duracao)) {
         score += 3;
     }
     
-    // Critério 11: Ano exato (peso médio)
+    // Critério 10: Ano exato (peso médio)
     if (m1.ano == m2.ano) {
         score += 4;
     }
-    // Critério 12: Anos próximos (1-3 anos de diferença)
+    // Critério 11: Anos bem próximos (1-3 anos de diferença)
     else if (abs(m1.ano - m2.ano) <= 3) {
         score += 2;
     }
-    // Critério 13: Anos bem próximos (4-7 anos de diferença)
+    // Critério 12: Anos próximos (4-7 anos de diferença)
     else if (abs(m1.ano - m2.ano) <= 7) {
         score += 1;
     }
     
-    // Critério 14: Mesma década (bônus adicional)
+    // Critério 13: Mesma década (bônus adicional)
     if (mesmaDecada(m1.ano, m2.ano) && abs(m1.ano - m2.ano) > 0) {
         score += 2;
     }
     
-    // Critério 15: Mesmo século (bônus muito pequeno)
+    // Critério 14: Mesmo século (bônus muito pequeno)
     if (mesmoSeculo(m1.ano, m2.ano) && !mesmaDecada(m1.ano, m2.ano)) {
         score += 1;
     }
     
-    // Critério 16: Música clássica/vintage (antes de 1970)
+    // Critério 15: Música clássica/vintage (antes de 1970)
     if (m1.ano < 1970 && m2.ano < 1970) {
         score += 2;
     }
     
-    // Critério 17: Música moderna (após 2000)
+    // Critério 16: Música moderna (após 2000)
     if (m1.ano >= 2000 && m2.ano >= 2000) {
         score += 1;
     }
@@ -363,20 +347,12 @@ void recomendarPorArtista(const Musica banco[], int totalMusicas, const string& 
         }
     }
 
-    // Adiciona artistas similares
-    for (int i = 0; i < totalMusicas; i++) {
-        if (banco[i].artista == artistaBusca) continue;
-        if (artistasSimilares(banco[i].artista, artistaBusca)) {
-            recomendadas[totalRecomendadas++] = {banco[i], 6};
-        }
-    }
-
-    // Adiciona músicas de gêneros similares
+    // Adiciona músicas de gêneros exatos e similares
     for (int i = 0; i < totalMusicas; i++) {
         if (banco[i].artista == artistaBusca) continue;
         bool jaAdicionado = false;
         
-        // Verifica se já foi adicionado como artista similar
+        // Verifica se já foi adicionado
         for (int k = 0; k < totalRecomendadas; k++) {
             if (banco[i].titulo == recomendadas[k].musica.titulo && 
                 banco[i].artista == recomendadas[k].musica.artista) {
@@ -386,10 +362,22 @@ void recomendarPorArtista(const Musica banco[], int totalMusicas, const string& 
         }
         
         if (!jaAdicionado) {
+            // Verifica gêneros exatos
             for (int j = 0; j < totalGeneros; j++) {
                 if (banco[i].genero == generosUnicos[j]) {
-                    recomendadas[totalRecomendadas++] = {banco[i], 4};
+                    recomendadas[totalRecomendadas++] = {banco[i], 6}; // Score 6 para gênero exato
+                    jaAdicionado = true;
                     break;
+                }
+            }
+            
+            // Se não foi adicionado por gênero exato, verifica gêneros similares
+            if (!jaAdicionado) {
+                for (int j = 0; j < totalGeneros; j++) {
+                    if (generosSimilares(banco[i].genero, generosUnicos[j])) {
+                        recomendadas[totalRecomendadas++] = {banco[i], 3}; // Score 3 para gênero similar
+                        break;
+                    }
                 }
             }
         }

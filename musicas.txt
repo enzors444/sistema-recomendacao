@@ -154,7 +154,6 @@ Baiao;Luiz Gonzaga;Live in Recife;Forro;1980;Portugues;8;167
 Construcao;Chico Buarque;Ao Vivo Paris;MPB;1974;Portugues;9;389
 Apesar De Voce;Chico Buarque;Live at Canecao;MPB;1972;Portugues;8;245
 Alive;Pearl Jam;Live on Two Legs;Rock;1998;Ingles;8;376
-Black;Pearl Jam;Ao Vivo MTV;Rock;1992;Ingles;8;362
 Black;Pearl Jam;MTV Unplugged;Rock;1992;Ingles;8;334
 Alive;Pearl Jam;Unplugged in New York;Rock;1992;Ingles;7;325
 Layla;Eric Clapton;MTV Unplugged;Rock;1992;Ingles;9;443
