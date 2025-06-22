@@ -153,15 +153,6 @@ Este sistema foi desenvolvido para demonstrar conceitos de:
 - Sistemas de autenticação simples
 - Interfaces de linha de comando
 
-## 📈 Possíveis Melhorias
-
-- Interface gráfica (GUI)
-- Banco de dados SQL
-- API web para integração
-- Machine Learning para recomendações
-- Suporte a playlists
-- Integração com serviços de streaming
-
 ---
 
 *Sistema desenvolvido em C++ com foco em algoritmos de similaridade e experiência do usuário.*
