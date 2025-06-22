@@ -27,7 +27,7 @@ Um sistema inteligente de recomendação de músicas desenvolvido em C++ que uti
 O sistema oferece **3 tipos de recomendação**:
 
 #### 1. **Por Música**
-- Algoritmo de similaridade com **17 critérios diferentes**
+- Algoritmo de similaridade com **16 critérios diferentes**
 - Sistema de pontuação ponderada
 - Comparação por gênero, artista, álbum, idioma, popularidade, duração e ano
 
