@@ -233,13 +233,53 @@ We Are Never Ever Getting Back Together;Taylor Swift;Red;Pop;2012;Ingles;7;193
 I Knew You Were Trouble;Taylor Swift;Red;Pop;2012;Ingles;8;220
 Love Story;Taylor Swift;Fearless;Pop;2008;Ingles;8;235
 You Belong With Me;Taylor Swift;Fearless;Pop;2008;Ingles;8;231
-Evidências;Chitãozinho & Xororó;Cowboys do Asfalto;Sertanejo;1990;Portugues;10;260
-Ai Se Eu Te Pego;Michel Teló;Na Balada;Sertanejo;2011;Portugues;9;166
-Domingo de Manhã;Marcos & Belutti;Acústico;Sertanejo;2014;Portugues;9;210
-Te Assumi Pro Brasil;Matheus & Kauan;Na Praia 2 (Ao Vivo);Sertanejo;2017;Portugues;8;162
-Vidinha de Balada;Henrique & Juliano;O Céu Explica Tudo (Ao Vivo);Sertanejo;2017;Portugues;9;186
-Cem Mil;Gusttavo Lima;O Embaixador (Ao Vivo);Sertanejo;2019;Portugues;9;203
-Apelido Carinhoso;Gusttavo Lima;Buteco do Gusttavo Lima Vol. 2;Sertanejo;2018;Portugues;9;199
-Medo Bobo;Maiara & Maraisa;Ao Vivo em Goiânia;Sertanejo;2016;Portugues;9;230
-Infiel;Marília Mendonça;Marília Mendonça;Sertanejo;2015;Portugues;10;235
-Todo Mundo Vai Sofrer;Marília Mendonça;Todos os Cantos (Ao Vivo);Sertanejo;2019;Portugues;9;198
+Erro Gostoso;Simone Mendes;Cintilante;Sertanejo;2023;Portugues;10;169
+Leao;Marilia Mendonca;Decretos Reais;Sertanejo;2023;Portugues;10;177
+Nosso Quadro;Ana Castela;AgroPlay Verao;Sertanejo;2023;Portugues;9;162
+Eu Gosto Assim;Gustavo Mioto;Ao Vivo em Sao Paulo;Sertanejo;2022;Portugues;9;150
+Bombonzinho;Israel & Rodolffo;Let's Bora;Sertanejo;2022;Portugues;10;174
+Desejo Imortal;Gusttavo Lima;Single;Sertanejo;2023;Portugues;9;228
+A Culpa E Nossa;Maiara & Maraisa;Identidade;Sertanejo;2023;Portugues;10;188
+Oi Balde;Ze Neto & Cristiano;Escolhas;Sertanejo;2023;Portugues;9;187
+Traumatizei;Henrique & Juliano;To Be;Sertanejo;2022;Portugues;10;174
+Palhaca;Naiara Azevedo;Plural;Sertanejo;2022;Portugues;8;182
+Nao Vitalicio (Nunca Mais);Matheus & Kauan;Basiquinho 2;Sertanejo;2023;Portugues;9;168
+Patio do Posto;Ze Neto & Cristiano;Tarja Preta;Sertanejo;2022;Portugues;9;185
+Solteiro Forcado;Luan Santana;Luan City 2.0;Sertanejo;2023;Portugues;10;192
+Ta OK;DENNIS;Single;Funk;2023;Portugues;10;179
+Faz um Vuk Vuk (Teto Espelhado);MC Kevin o Chris;Single;Funk;2023;Portugues;9;157
+Dentro da Hilux;Luan Pereira;Single;Funk;2023;Portugues;10;201
+Namora Ai;MC Ryan SP;Single;Funk;2023;Portugues;9;154
+Coracao de Gelo;WIU;Manual de Como Amar Errado;Funk;2022;Portugues;10;209
+Ballena;Vulgo FK;Perdas & Ganhos;Funk;2023;Portugues;9;221
+Novidade na Area;MC Livinho;Single;Funk;2023;Portugues;9;163
+Qual a sua Marra?;MC Jacare;Single;Funk;2023;Portugues;8;152
+Sereia;Orochi;Vida Cara;Funk;2022;Portugues;10;261
+Gol Bolinha, Gol Quadrado 2;MC Pedrinho;Single;Funk;2021;Portugues;9;212
+Ela Pirou na Dodge Ram;Luan Pereira;Single;Funk;2023;Portugues;10;139
+Casei Com a Putaria;MC Ryan SP;Single;Funk;2022;Portugues;8;184
+Bora pro Piseiro;MC Kevin o Chris;Todo Mundo Ama o Chris;Funk;2021;Portugues;9;155
+Deixa Acontecer;Grupo Revelacao;Revelacao;Pagode;2002;Portugues;10;243
+Pe na Areia;Diogo Nogueira;Ao Vivo em Cuba;Pagode;2012;Portugues;10;233
+Cheia de Manias;Raca Negra;Raca Negra;Pagode;1992;Portugues;10;195
+Ta Escrito;Grupo Revelacao;Ao Vivo no Morro;Pagode;2009;Portugues;10;248
+Lancinho;Turma do Pagode;Mania do Brasil;Pagode;2014;Portugues;9;201
+Sinais;Sorriso Maroto;Sinais;Pagode;2009;Portugues;10;214
+Inarai;Katinguele;Mundo dos Sonhos;Pagode;1996;Portugues;9;222
+Uma Estrela;Belo;Belo;Pagode;2006;Portugues;9;206
+Quando a Gira Girou;Zeca Pagodinho;Acustico MTV;Pagode;2003;Portugues;10;182
+Pimpolho;Art Popular;Art Popular;Pagode;1996;Portugues;9;188
+Telegrama;Exaltasamba;25 Anos Ao Vivo;Pagode;2010;Portugues;10;250
+Primeiro Beijo;Dilsinho;Terra do Nunca;Pagode;2019;Portugues;9;193
+Ate o Sol Quis Ver;Ludmilla;Numanice #2;Pagode;2021;Portugues;10;164
+Kenny G;Matue;Single;Trap;2020;Portugues;10;171
+Vampiro;Matue;Single;Trap;2022;Portugues;10;250
+Maquina do Tempo;Matue;Maquina do Tempo;Trap;2020;Portugues;10;230
+Fim de Semana no Rio;Teto;Single;Trap;2021;Portugues;9;173
+M4;Teto;previas.zip;Trap;2021;Portugues;9;178
+Anos Luz;Matue;Anos Luz;Trap;2017;Portugues;10;238
+Groupies;Doode;Single;Trap;2021;Portugues;9;216
+Quer Voar;Matue;Single;Trap;2021;Portugues;10;191
+Ouro Rose;MC Cabelinho;Little Hair;Trap;2021;Portugues;9;162
+X1;MC Cabelinho;Little Love;Trap;2022;Portugues;10;169
+Toda Hora;MC Cabelinho;Ainda;Trap;2019;Portugues;9;175
