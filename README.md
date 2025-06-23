@@ -106,7 +106,6 @@ O sistema utiliza um algoritmo proprietário que pontua músicas baseado em:
 | Idioma Similar | 1 ponto |
 | Popularidade Similar | 2 pontos |
 | Duração Similar | 3 pontos |
-| **Bônus: Mesmo Álbum + Artista** | **2 pontos** |
 
 ## Descrição dos Critérios
 
@@ -122,7 +121,6 @@ O sistema utiliza um algoritmo proprietário que pontua músicas baseado em:
 - **Idioma Similar**: Idiomas da mesma família linguística
 - **Popularidade Similar**: Níveis de popularidade próximos
 - **Duração Similar**: Duração próxima da música
-- **Bônus**: Pontuação adicional quando música é do mesmo álbum e mesmo artista
 
 ### Gêneros Similares Reconhecidos
 - Rock ↔ Pop Rock
