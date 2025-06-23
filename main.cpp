@@ -89,6 +89,8 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     if ((g1 == "funk" && g2 == "rap") || (g1 == "rap" && g2 == "funk")) return true;
     if ((g1 == "funk" && g2 == "trap") || (g1 == "trap" && g2 == "funk")) return true;
     if ((g1 == "grunge" && g2 == "rock") || (g1 == "rock" && g2 == "grunge")) return true;
+    if ((g1 == "rock" && g2 == "metal") || (g1 == "metal" && g2 == "rock")) return true;
+    if ((g1 == "rock" && g2 == "heavy metal") || (g1 == "heavy metal" && g2 == "rock")) return true;
     
     return false;
 }
