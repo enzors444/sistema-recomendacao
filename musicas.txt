@@ -167,3 +167,149 @@ Comida;Titas;Unplugged;Rock;1997;Portugues;8;245
 Nutshell;Alice In Chains;Unplugged;Rock;1996;Ingles;6;297
 Would?;Alice In Chains;Unplugged;Rock;1996;Ingles;8;223
 Man In The Box;Alice In Chains;Facelift;Rock;1990;Ingles;8;285
+Rappers Delight;Sugarhill Gang;Sugarhill Gang;Hip Hop;1979;Ingles;8;915
+The Message;Grandmaster Flash;The Message;Hip Hop;1982;Ingles;9;451
+Walk This Way;Run DMC;Raising Hell;Hip Hop;1986;Ingles;8;317
+Fight The Power;Public Enemy;Do the Right Thing Soundtrack;Hip Hop;1989;Ingles;9;335
+Straight Outta Compton;NWA;Straight Outta Compton;Hip Hop;1988;Ingles;8;261
+California Love;2Pac;All Eyez on Me;Hip Hop;1995;Ingles;9;276
+Juicy;The Notorious BIG;Ready to Die;Hip Hop;1994;Ingles;9;305
+Lose Yourself;Eminem;8 Mile Soundtrack;Hip Hop;2002;Ingles;10;326
+Stan;Eminem;The Marshall Mathers LP;Hip Hop;2000;Ingles;9;404
+99 Problems;Jay-Z;The Black Album;Hip Hop;2003;Ingles;8;232
+In Da Club;50 Cent;Get Rich or Die Tryin';Hip Hop;2003;Ingles;8;193
+Hey Ya;OutKast;Speakerboxxx/The Love Below;Hip Hop;2003;Ingles;9;235
+Ms Jackson;OutKast;Stankonia;Hip Hop;2000;Ingles;8;271
+Stronger;Kanye West;Graduation;Hip Hop;2007;Ingles;8;312
+Gold Digger;Kanye West;Late Registration;Hip Hop;2005;Ingles;8;207
+Umbrella;Rihanna;Good Girl Gone Bad;Hip Hop;2007;Ingles;8;263
+Crazy In Love;Beyonce;Dangerously in Love;Hip Hop;2003;Ingles;8;236
+Empire State Of Mind;Jay-Z;The Blueprint 3;Hip Hop;2009;Ingles;8;276
+Love The Way You Lie;Eminem;Recovery;Hip Hop;2010;Ingles;8;263
+Not Afraid;Eminem;Recovery;Hip Hop;2010;Ingles;8;248
+Swimming Pools;Kendrick Lamar;good kid, m.A.A.d city;Hip Hop;2012;Ingles;9;313
+HUMBLE;Kendrick Lamar;DAMN;Hip Hop;2017;Ingles;9;177
+Sicko Mode;Travis Scott;ASTROWORLD;Trap;2018;Ingles;8;312
+Goosebumps;Travis Scott;Birds in the Trap Sing McKnight;Trap;2016;Ingles;8;244
+XO Tour Llif3;Lil Uzi Vert;Luv Is Rage 2;Trap;2017;Ingles;8;183
+Mask Off;Future;FUTURE;Trap;2017;Ingles;7;204
+Bad And Boujee;Migos;Culture;Trap;2016;Ingles;8;343
+DNA;Kendrick Lamar;DAMN;Hip Hop;2017;Ingles;9;186
+LOYALTY;Kendrick Lamar;DAMN;Hip Hop;2017;Ingles;8;227
+Gods Plan;Drake;Scorpion;Hip Hop;2018;Ingles;8;199
+In My Feelings;Drake;Scorpion;Hip Hop;2018;Ingles;7;218
+Hotline Bling;Drake;Views;Hip Hop;2015;Ingles;8;267
+Started From The Bottom;Drake;Nothing Was the Same;Hip Hop;2013;Ingles;7;175
+Bodak Yellow;Cardi B;Invasion of Privacy;Trap;2017;Ingles;8;263
+I Like It;Cardi B;Invasion of Privacy;Trap;2018;Ingles;8;253
+Lucid Dreams;Juice WRLD;Goodbye & Good Riddance;Trap;2018;Ingles;8;240
+All The Stars;Kendrick Lamar;Black Panther Soundtrack;Hip Hop;2018;Ingles;8;232
+Rockstar;Post Malone;beerbongs & bentleys;Hip Hop;2017;Ingles;8;218
+Congratulations;Post Malone;Stoney;Hip Hop;2016;Ingles;7;220
+White Iverson;Post Malone;Stoney;Hip Hop;2015;Ingles;7;260
+Sunflower;Post Malone;Spider-Man Into the Spider-Verse;Hip Hop;2018;Ingles;8;158
+Circles;Post Malone;Hollywood's Bleeding;Hip Hop;2019;Ingles;8;215
+Old Town Road;Lil Nas X;7 EP;Hip Hop;2019;Ingles;8;113
+Panini;Lil Nas X;7 EP;Hip Hop;2019;Ingles;7;115
+Rodeo;Lil Nas X;7 EP;Hip Hop;2019;Ingles;7;157
+Montero;Lil Nas X;Montero;Hip Hop;2021;Ingles;8;137
+Industry Baby;Lil Nas X;Montero;Hip Hop;2021;Ingles;8;212
+Thats What I Want;Lil Nas X;Montero;Hip Hop;2021;Ingles;7;223
+Levitating;Dua Lipa;Future Nostalgia;Pop;2020;Ingles;9;203
+Blinding Lights;The Weeknd;After Hours;Pop;2019;Ingles;9;200
+Watermelon Sugar;Harry Styles;Fine Line;Pop;2019;Ingles;8;174
+As It Was;Harry Styles;Harrys House;Pop;2022;Ingles;9;167
+Heat Waves;Glass Animals;Dreamland;Pop;2020;Ingles;8;238
+Stay;The Kid LAROI;F*ck Love 3: Over You;Pop;2021;Ingles;8;141
+Good 4 U;Olivia Rodrigo;SOUR;Pop;2021;Ingles;8;178
+Drivers License;Olivia Rodrigo;SOUR;Pop;2021;Ingles;9;242
+Anti-Hero;Taylor Swift;Midnights;Pop;2022;Ingles;9;200
+Shake It Off;Taylor Swift;1989;Pop;2014;Ingles;8;219
+Blank Space;Taylor Swift;1989;Pop;2014;Ingles;8;231
+Bad Blood;Taylor Swift;1989;Pop;2014;Ingles;7;211
+Look What You Made Me Do;Taylor Swift;Reputation;Pop;2017;Ingles;8;195
+We Are Never Ever Getting Back Together;Taylor Swift;Red;Pop;2012;Ingles;7;193
+22;Taylor Swift;Red;Pop;2012;Ingles;7;232
+I Knew You Were Trouble;Taylor Swift;Red;Pop;2012;Ingles;8;220
+Love Story;Taylor Swift;Fearless;Pop;2008;Ingles;8;235
+You Belong With Me;Taylor Swift;Fearless;Pop;2008;Ingles;8;231
+Erro Gostoso;Simone Mendes;Cintilante;Sertanejo;2023;Portugues;9;183
+Nosso Quadro;Ana Castela;Boiadeira Internacional;Sertanejo;2023;Portugues;9;195
+Leao;Marilia Mendonca;Decretos Reais;Sertanejo;2023;Portugues;10;210
+Bombonzinho;Israel;Lets Bora, Vol.2;Sertanejo;2023;Portugues;8;178
+Seu Brilho Sumiu;Israel;Single;Sertanejo;2023;Portugues;8;185
+Canudinho;Gusttavo Lima;Single;Sertanejo;2023;Portugues;9;192
+Lapada Dela;Jorge;E Simples Assim;Sertanejo;2024;Portugues;8;186
+Medo Bobo 2.0;Maiara;Single;Sertanejo;2024;Portugues;8;175
+Voce Me Conquistou;Luan Santana;Luan City 2.0;Sertanejo;2024;Portugues;9;190
+To Voltando;Ze Neto;Escolhas;Sertanejo;2024;Portugues;9;200
+Malvado 3;Xama;Single;Trap;2022;Portugues;10;220
+Poesia Acustica #9;Pineapple;EP;Trap;2020;Portugues;9;180
+Rappers Brasileiros;Djonga;Single;Trap;2020;Portugues;8;140
+Inverno;Matue;Album;Trap;2020;Portugues;9;160
+Maquina do Tempo;Matue;Album;Trap;2021;Portugues;8;170
+Gorila;Matue;Single;Trap;2021;Portugues;9;180
+Banco;Matue;Single;Trap;2022;Portugues;8;190
+Vampiro;Matue;Single;Trap;2023;Portugues;9;200
+Conexoes de Mafia;Matue;Single;Trap;2021;Portugues;7;175
+Eu Sou o Trem;MC Cabelinho;Single;Trap;2024;Portugues;9;175
+Rio Sul;MC Cabelinho;Single;Trap;2024;Portugues;8;180
+Cabare;MC Cabelinho;Single;Trap;2024;Portugues;9;165
+Essencia de Cria;MC Cabelinho;Single;Trap;2024;Portugues;8;170
+Good Vibe;Filipe Ret;Single;Trap;2024;Portugues;8;160
+Me Sinto Abencoado;MC Poze do Rodo;Single;Trap;2024;Portugues;9;185
+Baile de Favela;MC Joao;Single;Funk;2020;Portugues;8;130
+Danca Phonk;MC GW;Single;Funk;2021;Portugues;9;150
+Fogo no Parquinho;MC Davi;Single;Funk;2020;Portugues;7;140
+Rabetao;MC Kevinho;Single;Funk;2021;Portugues;8;135
+Terremoto;Anitta;Single;Funk;2022;Portugues;9;128
+Envolvimento;MC Loma;Single;Funk;2020;Portugues;8;132
+Bum Bum Granada;MC Zaac;Single;Funk;2021;Portugues;7;145
+Rainha da Favela;Ludmilla;Single;Funk;2023;Portugues;9;138
+Braba do Ano;MC Poze do Rodo;Single;Funk;2024;Portugues;9;150
+Sequencia dos Drake;MC GP;Single;Funk;2024;Portugues;8;145
+Flow Carioca;TrapLaudo;Single;Funk;2024;Portugues;7;142
+Bate Forte;MC Kadu;Single;Funk;2024;Portugues;8;138
+Pegada Braba;MC Livinho;Single;Funk;2024;Portugues;9;148
+Zona Norte;MC Marks;Single;Funk;2024;Portugues;8;152
+MTG na Imaginacao;MC Livinho;Single;Funk;2024;Portugues;9;140
+Favela;MC Cabelinho;Single;Trap;2019;Portugues;9;175
+Passo Bem Solto;Atlxs;Single;Funk;2025;Portugues;9;103
+En 4;Anitta;Single;Funk;2025;Portugues;9;186
+Romeo;Anitta;Single;Reggaeton;2025;Espanhol;9;191
+Tubaroes (Ao Vivo);Diego;Single;Sertanejo;2025;Portugues;9;162
+P do Pecado (Ao Vivo);Grupo Menos e Mais;Single;Sertanejo;2025;Portugues;8;168
+Voce Ainda Ta Aqui (Ao Vivo);Kamilla Maria;Single;Sertanejo;2025;Portugues;8;200
+Deixa Ela Descer no Chao;MC Durrony;Single;Funk;2025;Portugues;8;160
+IAMBINHU;BIN;Album;Trap;2025;Portugues;9;180
+Apaga Apaga Apaga;Danilo;Single;Funk;2025;Portugues;9;170
+Proibido Terminar;Gusttavo Lima;Single;Sertanejo;2025;Portugues;9;185
+Oh Garota Eu Quero Voce So Pra Mim;Oruam;Single;Funk;2025;Portugues;9;195
+Ultima Noite;Leo Foguete;Single;Sertanejo;2025;Portugues;9;200
+Resenha do Arrocha;J. Eskine;Single;Forro-Sertanejo;2025;Portugues;8;165
+Mae Solteira;DG;Single;Funk;2025;Portugues;9;175
+Lei Anti Oruam;Oruam;Single;Funk;2025;Portugues;8;160
+Modo Pilantra;Luan Santana;Single;Sertanejo;2025;Portugues;9;182
+Lugar;Menos e Mais;Single;Sertanejo;2025;Portugues;8;170
+Jogadora Cara;Manu Bahtidao;Single;Sertanejo;2024;Portugues;8;160
+Goodnight Menina 4;MC IG;Single;Trap;2024;Portugues;8;158
+Cachorrinha Online;DJ Zullu;Single;Funk;2024;Portugues;9;143
+Revoada do Sofrimento;Murilo Huff;Single;Sertanejo;2025;Portugues;9;192
+Beat do Coracao;WS On Board;Single;Forro;2024;Portugues;9;168
+Tudo Vira Saudade;Simone Mendes;Single;Sertanejo;2025;Portugues;9;189
+Medley do Ano;Luan Pereira;Single;Sertanejo;2025;Portugues;9;181
+Mensagem Apagada;Grupo Menos e Mais;Single;Pagode;2025;Portugues;9;174
+Cliche;Dilsinho;Single;Pagode;2024;Portugues;9;170
+Vai Me Perder;Ferrugem;Single;Pagode;2025;Portugues;9;178
+Dublae de Namorado;Turma do Pagode;Single;Pagode;2024;Portugues;8;165
+Mal Resolvido;Grupo Pixote;Single;Pagode;2024;Portugues;8;168
+Nosso Amor E Perfeito;Thiaguinho;Infinito;Pagode;2024;Portugues;9;180
+Despedida de Casal;Revelacao;Single;Pagode;2025;Portugues;8;172
+A Culpa E Dela;Jeito Moleque;Single;Pagode;2024;Portugues;8;163
+Conselho de Amigo;Vou Zuar;Single;Pagode;2025;Portugues;9;177
+Te Esquecer Pra Sempre;Kamisa 10;Single;Pagode;2024;Portugues;8;170
+A Gente Combina;Ferrugem;Single;Pagode;2024;Portugues;9;169
+Deixa Alguem Legal Te Amar;Thiaguinho;Infinito Vol.2;Pagode;2025;Portugues;9;173
+
+
+

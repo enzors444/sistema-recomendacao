@@ -76,7 +76,6 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     string g1 = paraMinusculas(genero1);
     string g2 = paraMinusculas(genero2);
     
-    // Gêneros relacionados
     if ((g1 == "rock" && g2 == "pop rock") || (g1 == "pop rock" && g2 == "rock")) return true;
     if ((g1 == "jazz" && g2 == "blues") || (g1 == "blues" && g2 == "jazz")) return true;
     if ((g1 == "reggae" && g2 == "ska") || (g1 == "ska" && g2 == "reggae")) return true;
@@ -85,6 +84,10 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     if ((g1 == "samba" && g2 == "bossa nova") || (g1 == "bossa nova" && g2 == "samba")) return true;
     if ((g1 == "country" && g2 == "folk") || (g1 == "folk" && g2 == "country")) return true;
     if ((g1 == "heavy metal" && g2 == "metal") || (g1 == "metal" && g2 == "heavy metal")) return true;
+    if ((g1 == "sertanejo" && g2 == "country") || (g1 == "country" && g2 == "sertanejo")) return true;
+    if ((g1 == "trap" && g2 == "hip hop") || (g1 == "hip hop" && g2 == "trap")) return true;
+    if ((g1 == "funk" && g2 == "hip hop") || (g1 == "hip hop" && g2 == "funk")) return true;
+    if ((g1 == "funk" && g2 == "rap") || (g1 == "rap" && g2 == "funk")) return true;
     
     return false;
 }
@@ -178,16 +181,6 @@ int calcularSimilaridade(const Musica& m1, const Musica& m2) {
     
     // Critério 14: Mesmo século (bônus muito pequeno)
     if (mesmoSeculo(m1.ano, m2.ano) && !mesmaDecada(m1.ano, m2.ano)) {
-        score += 1;
-    }
-    
-    // Critério 15: Música clássica/vintage (antes de 1970)
-    if (m1.ano < 1970 && m2.ano < 1970) {
-        score += 2;
-    }
-    
-    // Critério 16: Música moderna (após 2000)
-    if (m1.ano >= 2000 && m2.ano >= 2000) {
         score += 1;
     }
     
@@ -411,7 +404,7 @@ void salvarRecomendacoes(const string& usuario, const Musica& base, Recomendacao
 // ----------- Função Principal -----------
 
 int main() {
-    const int MAX_MUSICAS = 200;
+    const int MAX_MUSICAS = 400;
     Musica banco[MAX_MUSICAS];
     int totalMusicas = carregarMusicas(banco, MAX_MUSICAS);
 
