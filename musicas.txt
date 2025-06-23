@@ -3,7 +3,7 @@ Imagine;John Lennon;Imagine;Rock;1971;Ingles;10;183
 Hotel California;Eagles;Hotel California;Rock;1976;Ingles;9;391
 Stairway To Heaven;Led Zeppelin;Led Zeppelin IV;Rock;1971;Ingles;10;482
 Sweet Child O Mine;Guns N Roses;Appetite for Destruction;Rock;1987;Ingles;9;356
-Smells Like Teen Spirit;Nirvana;Nevermind;Rock;1991;Ingles;9;301
+Smells Like Teen Spirit;Nirvana;Nevermind;Grunge;1991;Ingles;9;301
 Wonderwall;Oasis;(What's the Story) Morning Glory?;Rock;1995;Ingles;8;258
 Yesterday;The Beatles;Help!;Pop Rock;1965;Ingles;10;125
 Hey Jude;The Beatles;The Beatles (White Album);Pop Rock;1968;Ingles;9;431
@@ -164,9 +164,9 @@ Tempo Perdido;Legiao Urbana;Acustico MTV;Rock;1999;Portugues;9;312
 Eduardo E Monica;Legiao Urbana;Acustico;Rock;1999;Portugues;8;285
 Epitafio;Titas;Acustico MTV;Rock;1997;Portugues;8;289
 Comida;Titas;Unplugged;Rock;1997;Portugues;8;245
-Nutshell;Alice In Chains;Unplugged;Rock;1996;Ingles;6;297
-Would?;Alice In Chains;Unplugged;Rock;1996;Ingles;8;223
-Man In The Box;Alice In Chains;Facelift;Rock;1990;Ingles;8;285
+Nutshell;Alice In Chains;Unplugged;Grunge;1996;Ingles;6;297
+Would?;Alice In Chains;Unplugged;Grunge;1996;Ingles;8;223
+Man In The Box;Alice In Chains;Facelift;Grunge;1990;Ingles;8;285
 Rappers Delight;Sugarhill Gang;Sugarhill Gang;Hip Hop;1979;Ingles;8;915
 The Message;Grandmaster Flash;The Message;Hip Hop;1982;Ingles;9;451
 Walk This Way;Run DMC;Raising Hell;Hip Hop;1986;Ingles;8;317
