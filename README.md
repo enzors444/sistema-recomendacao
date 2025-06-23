@@ -167,19 +167,6 @@ const int P_GENERO_EXATO = 10;     // Peso para mesmo gênero
 // ... outros pesos
 ```
 
-## 🤝 Contribuição
-
-Sugestões de melhorias são bem-vindas! Áreas para desenvolvimento futuro:
-- Interface gráfica
-- Integração com APIs de música
-- Machine learning para recomendações
-- Suporte a playlists
-- Avaliação de usuários
-
-## 📝 Licença
-
-Este projeto é de código aberto e está disponível sob a licença MIT.
-
 ## 👨‍💻 Desenvolvimento
 
 Desenvolvido em C++ utilizando:
