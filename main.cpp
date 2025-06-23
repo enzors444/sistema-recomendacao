@@ -1,10 +1,10 @@
 /*
  * Projeto desenvolvido por:
  * - Enzo Ribeiro da Silva (Matrícula: 812)
- * - Gustavo (Matrícula: ?)
- * - Lucas Hokari (Matrícula: ?)
- * - João Gabriel (Matrícula: ?)
- * - João Pedro (Matrícula: ?)
+ * - Gustavo Almeida Barrios (Matrícula: 2310)
+ * - Lucas Kazue da Silva Hokari (Matrícula: 2309)
+ * - João Gabriel Ribeiro Rezende Vilela (Matrícula: 9823)
+ * - João Pedro dos Santos Almeida do Valle (Matrícula: 2342)
  */
 
 #include <iostream>
