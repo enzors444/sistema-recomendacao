@@ -95,17 +95,17 @@ O sistema utiliza um algoritmo proprietário que pontua músicas baseado em:
 | Critério | Peso Máximo |
 |----------|-------------|
 | Mesmo Artista | 9 pontos |
-| Gênero Exato | 10 pontos |
-| Gênero Similar | 4 pontos |
+| Mesmo Álbum | 5 pontos |
+| Gênero Exato | 12 pontos |
+| Gênero Similar | 9 pontos |
+| Idioma Exato | 3 pontos |
+| Idioma Similar | 1 ponto |
 | Ano Exato | 6 pontos |
 | Ano Muito Próximo | 5 pontos |
 | Ano Próximo | 4 pontos |
 | Ano Mesma Década | 2 pontos |
-| Mesmo Álbum | 3 pontos |
-| Idioma Exato | 3 pontos |
-| Idioma Similar | 1 ponto |
 | Popularidade Similar | 2 pontos |
-| Duração Similar | 3 pontos |
+| Duração Similar | 2 pontos |
 
 ## Descrição dos Critérios
 
