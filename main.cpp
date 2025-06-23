@@ -120,12 +120,12 @@ int calcularSimilaridade(const Musica& m1, const Musica& m2) {
     const int P_IDIOMA_EXATO = 3;
     const int P_IDIOMA_SIMILAR = 1;
     const int P_ANO_EXATO = 6;
-    const int P_ANO_MUITO_PROXIMO = 4;
-    const int P_ANO_PROXIMO = 2;
+    const int P_ANO_MUITO_PROXIMO = 5;
+    const int P_ANO_PROXIMO = 4;
     const int P_ANO_DECADA = 2;
-    const int P_POPULARIDADE_SIMILAR = 4;
+    const int P_POPULARIDADE_SIMILAR = 2;
     const int P_DURACAO_SIMILAR = 3;
-    const int B_MESMO_ALBUM_ARTISTA = 1;
+    const int B_MESMO_ALBUM_ARTISTA = 2;
 
     const int PONTUACAO_MAXIMA = 
         P_ARTISTA_EXATO +
