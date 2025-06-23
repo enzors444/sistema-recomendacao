@@ -1,156 +1,193 @@
-# Sistema de Recomendação Musical
+# Sistema de Recomendação Musical 🎵
 
-Um sistema inteligente de recomendação de músicas desenvolvido em C++ que utiliza algoritmos de similaridade para sugerir músicas baseadas em diferentes critérios.
+Um sistema inteligente de recomendação de músicas em C++ que utiliza algoritmos de similaridade para encontrar músicas compatíveis com os gostos do usuário.
 
 ## 📋 Funcionalidades
 
-### 🔐 Sistema de Usuários
-- **Cadastro de novos usuários** com validação de nome único
-- **Login seguro** com verificação de credenciais
-- **Persistência de dados** em arquivo `usuarios.txt`
-
-### 🎵 Banco de Dados Musical
-- **Carregamento automático** de músicas do arquivo `musicas.txt`
-- **Adição dinâmica** de novas músicas ao banco
-- **Estrutura completa** com 8 campos por música:
-  - Título
-  - Artista
-  - Álbum
-  - Gênero
-  - Ano
+- **Sistema de Login/Cadastro**: Autenticação segura de usuários
+- **Busca Inteligente**: Pesquisa por palavras-chave no título das músicas
+- **Três Modos de Recomendação**:
+  - Por música específica (algoritmo de similaridade)
+  - Por gênero musical
+  - Por artista
+- **Algoritmo de Similaridade Avançado**: Considera múltiplos fatores como:
+  - Artista e álbum
+  - Gênero musical (incluindo gêneros similares)
+  - Ano de lançamento
   - Idioma
-  - Popularidade (1-10)
-  - Duração (segundos)
+  - Popularidade
+  - Duração
+- **Cadastro de Novas Músicas**: Expansão automática do banco de dados
+- **Histórico de Recomendações**: Salva todas as recomendações em arquivo
 
-### 🤖 Sistema de Recomendação Inteligente
+## 🔧 Pré-requisitos
 
-O sistema oferece **3 tipos de recomendação**:
-
-#### 1. **Por Música**
-- Algoritmo de similaridade com **14 critérios diferentes**
-- Sistema de pontuação ponderada
-- Comparação por gênero, artista, álbum, idioma, popularidade, duração e ano
-
-#### 2. **Por Gênero**
-- Busca por gênero específico
-- Detecção de gêneros relacionados (ex: Rock ↔ Pop Rock)
-
-#### 3. **Por Artista**
-- Todas as músicas do artista escolhido
-- Músicas de gêneros relacionados
-
-## 🧠 Algoritmo de Similaridade
-
-O sistema utiliza um **algoritmo proprietário** que considera:
-
-### Critérios Principais (Peso Alto)
-- **Gênero exato**: +8 pontos
-- **Artista exato**: +7 pontos
-- **Álbum exato**: +6 pontos
-- **Idioma exato**: +6 pontos
-
-### Critérios Secundários (Peso Médio)
-- **Gêneros relacionados**: +5 pontos
-- **Popularidade similar**: +2-4 pontos
-- **Ano exato**: +4 pontos
-- **Mesma década**: +2 pontos
-
-### Critérios Auxiliares (Peso Baixo)
-- **Duração similar**: +3 pontos
-- **Anos próximos**: +1-2 pontos
-- **Bônus especiais** para hits populares
-
-### Relacionamentos Inteligentes
-- **Gêneros**: Rock ↔ Pop Rock, Jazz ↔ Blues, Hip Hop ↔ Rap
-- **Idiomas**: Português ↔ Espanhol, Inglês ↔ Americano
-- **Álbuns**: Greatest Hits ↔ Best Of, Live ↔ Ao Vivo
-
-## 🚀 Como Usar
-
-### Pré-requisitos
-- Compilador C++ (g++, Visual Studio, etc.)
-- Arquivo `musicas.txt` com dados musicais
-
-### Formato do arquivo `musicas.txt`
-```
-titulo;artista;album;genero;ano;idioma;popularidade;duracao
-Bohemian Rhapsody;Queen;A Night At The Opera;Rock;1975;Ingles;10;355
-```
-
-### Compilação e Execução
-```bash
-# Compilar
-g++ -o music_system main.cpp
-
-# Executar
-./music_system
-```
-
-### Fluxo de Uso
-
-1. **Escolher**: Criar conta ou fazer login
-2. **Selecionar tipo de recomendação**:
-   - Por música específica
-   - Por gênero
-   - Por artista
-3. **Inserir dados** conforme solicitado
-4. **Visualizar recomendações** ordenadas por similaridade
-5. **Navegar pelos resultados** (5 por vez)
+- Compilador C++ (GCC, Clang, MSVC)
+- Padrão C++11 ou superior
 
 ## 📁 Estrutura de Arquivos
 
 ```
-├── main.cpp              # Código principal
-├── musicas.txt           # Banco de dados de músicas
-├── usuarios.txt          # Dados dos usuários (criado automaticamente)
-└── recomendacoes.txt     # Histórico de recomendações (criado automaticamente)
+projeto/
+├── main.cpp                 # Código fonte principal
+├── musicas.txt             # Banco de dados de músicas (criado automaticamente)
+├── usuarios.txt            # Cadastro de usuários (criado automaticamente)
+├── recomendacoes.txt       # Histórico de recomendações (criado automaticamente)
+└── README.md               # Este arquivo
 ```
 
-## 🔧 Funcionalidades Técnicas
+## 🚀 Como Usar
 
-### Normalização de Dados
-- **Conversão para minúsculas** para comparações
-- **Capitalização automática** de palavras
-- **Tratamento de espaços** e formatação
-
-### Algoritmos Utilizados
-- **Bubble Sort** para ordenação por similaridade
-- **Busca linear** otimizada
-- **Cálculo de similaridade** multi-critério
-
-### Validações
-- **Entrada de dados** com verificação de tipos
-- **Ranges de valores** (popularidade 1-10)
-- **Arquivos obrigatórios** com tratamento de erros
-
-## 📊 Exemplo de Saída
-
-```
-=== Recomendações ===
-
-- Somebody To Love | Queen | A Day At The Races | Rock | 1976 | Ingles | Pop: 9 | 4:56 | Similaridade: 28
-- We Will Rock You | Queen | News Of The World | Rock | 1977 | Ingles | Pop: 10 | 2:02 | Similaridade: 25
-- Don't Stop Me Now | Queen | Jazz | Rock | 1978 | Ingles | Pop: 8 | 3:29 | Similaridade: 23
+### 1. Compilação
+```bash
+g++ -o recomendador main.cpp
 ```
 
-## 🎯 Características Avançadas
+### 2. Execução
+```bash
+./recomendador
+```
 
-- **Sistema de pontuação inteligente** com pesos balanceados
-- **Detecção de relacionamentos** entre gêneros e idiomas
-- **Filtragem de duplicatas** automática
-- **Histórico persistente** de recomendações
-- **Interface amigável** com navegação por páginas
-- **Adição dinâmica** de músicas não catalogadas
+### 3. Primeiro Uso
+1. Escolha "Criar Conta" e cadastre-se
+2. Faça login com suas credenciais
+3. Escolha o tipo de recomendação desejada
+
+### 4. Tipos de Recomendação
+
+#### Por Música
+- Digite palavras-chave do título
+- Selecione a música desejada ou cadastre uma nova
+- Receba recomendações baseadas em similaridade
+
+#### Por Gênero
+- Digite o gênero desejado
+- Receba músicas do mesmo gênero ou similares
+
+#### Por Artista
+- Digite o nome do artista
+- Receba músicas do artista e de gêneros relacionados
+
+## 📊 Formato dos Dados
+
+### Arquivo `musicas.txt`
+Formato: `titulo;artista;album;genero;ano;idioma;popularidade;duracao`
+
+Exemplo:
+```
+Bohemian Rhapsody;Queen;A Night At The Opera;Rock;1975;Inglês;10;355
+```
+
+### Arquivo `usuarios.txt`
+Formato: `usuario senha`
+
+### Arquivo `recomendacoes.txt`
+Contém o histórico completo de todas as recomendações geradas.
+
+## 🧮 Algoritmo de Similaridade
+
+O sistema utiliza um algoritmo proprietário que pontua músicas baseado em:
+
+| Critério | Peso Máximo |
+|----------|-------------|
+| Mesmo Artista | 9 pontos |
+| Gênero Exato | 10 pontos |
+| Gênero Similar | 4 pontos |
+| Ano Exato | 6 pontos |
+| Mesmo Álbum | 3 pontos |
+| Idioma | 3 pontos |
+| Popularidade Similar | 4 pontos |
+| Duração Similar | 3 pontos |
+
+### Gêneros Similares Reconhecidos
+- Rock ↔ Pop Rock
+- Jazz ↔ Blues
+- Hip Hop ↔ Rap ↔ Trap ↔ Funk
+- Eletrônica ↔ Techno
+- Samba ↔ Bossa Nova
+- Country ↔ Folk ↔ Sertanejo
+- Heavy Metal ↔ Metal
+- Grunge ↔ Rock
+
+## 💡 Características Técnicas
+
+- **Busca Flexível**: Aceita múltiplas palavras-chave
+- **Normalização de Texto**: Converte automaticamente para formato padrão
+- **Ordenação por Relevância**: Resultados ordenados por similaridade
+- **Interface Interativa**: Navegação intuitiva por menus
+- **Persistência de Dados**: Todos os dados são salvos em arquivos
+
+## 🔍 Exemplo de Uso
+
+```
+=== Sistema de Login ===
+1. Criar Conta
+2. Fazer Login
+Escolha: 1
+
+Digite um nome de usuario: joao
+Digite uma senha: 123456
+Conta criada com sucesso!
+
+=== Como deseja obter recomendacoes? ===
+1. Com base em uma musica
+2. Com base em um genero
+3. Com base em um artista
+Escolha: 1
+
+Digite palavras-chave do titulo da musica: bohemian rhapsody
+
+Musica encontrada:
+- Bohemian Rhapsody | Queen | A Night At The Opera | Rock | 1975 | Inglês | Pop: 10 | 5:55
+
+Esta e a musica que voce estava procurando? (s/n): s
+
+=== Recomendacoes ===
+- We Will Rock You | Queen | News Of The World | Rock | 1977 | Inglês | Pop: 9 | 2:02 | Similaridade: 85
+- Stairway To Heaven | Led Zeppelin | Led Zeppelin IV | Rock | 1971 | Inglês | Pop: 10 | 8:02 | Similaridade: 72
+...
+```
+
+## 🛠️ Personalização
+
+### Adicionando Novos Gêneros Similares
+Edite a função `generosSimilares()` no código fonte:
+
+```cpp
+if ((g1 == "novo_genero" && g2 == "genero_similar") || 
+    (g1 == "genero_similar" && g2 == "novo_genero")) return true;
+```
+
+### Ajustando Pesos do Algoritmo
+Modifique as constantes na função `calcularSimilaridade()`:
+
+```cpp
+const int P_ARTISTA_EXATO = 9;     // Peso para mesmo artista
+const int P_GENERO_EXATO = 10;     // Peso para mesmo gênero
+// ... outros pesos
+```
 
 ## 🤝 Contribuição
 
-Este sistema foi desenvolvido para demonstrar conceitos de:
-- Algoritmos de recomendação
-- Manipulação de arquivos em C++
-- Estruturas de dados
-- Sistemas de autenticação simples
-- Interfaces de linha de comando
+Sugestões de melhorias são bem-vindas! Áreas para desenvolvimento futuro:
+- Interface gráfica
+- Integração com APIs de música
+- Machine learning para recomendações
+- Suporte a playlists
+- Avaliação de usuários
+
+## 📝 Licença
+
+Este projeto é de código aberto e está disponível sob a licença MIT.
+
+## 👨‍💻 Desenvolvimento
+
+Desenvolvido em C++ utilizando:
+- Estruturas de dados nativas
+- Algoritmos de ordenação
+- Manipulação de arquivos
+- Processamento de strings
 
 ---
 
-*Sistema desenvolvido em C++ com foco em algoritmos de similaridade e experiência do usuário.*
+*Sistema de Recomendação Musical - Conectando você às suas próximas músicas favoritas!* 🎶
