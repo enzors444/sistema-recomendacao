@@ -233,3 +233,13 @@ We Are Never Ever Getting Back Together;Taylor Swift;Red;Pop;2012;Ingles;7;193
 I Knew You Were Trouble;Taylor Swift;Red;Pop;2012;Ingles;8;220
 Love Story;Taylor Swift;Fearless;Pop;2008;Ingles;8;235
 You Belong With Me;Taylor Swift;Fearless;Pop;2008;Ingles;8;231
+Evidências;Chitãozinho & Xororó;Cowboys do Asfalto;Sertanejo;1990;Portugues;10;260
+Ai Se Eu Te Pego;Michel Teló;Na Balada;Sertanejo;2011;Portugues;9;166
+Domingo de Manhã;Marcos & Belutti;Acústico;Sertanejo;2014;Portugues;9;210
+Te Assumi Pro Brasil;Matheus & Kauan;Na Praia 2 (Ao Vivo);Sertanejo;2017;Portugues;8;162
+Vidinha de Balada;Henrique & Juliano;O Céu Explica Tudo (Ao Vivo);Sertanejo;2017;Portugues;9;186
+Cem Mil;Gusttavo Lima;O Embaixador (Ao Vivo);Sertanejo;2019;Portugues;9;203
+Apelido Carinhoso;Gusttavo Lima;Buteco do Gusttavo Lima Vol. 2;Sertanejo;2018;Portugues;9;199
+Medo Bobo;Maiara & Maraisa;Ao Vivo em Goiânia;Sertanejo;2016;Portugues;9;230
+Infiel;Marília Mendonça;Marília Mendonça;Sertanejo;2015;Portugues;10;235
+Todo Mundo Vai Sofrer;Marília Mendonça;Todos os Cantos (Ao Vivo);Sertanejo;2019;Portugues;9;198
