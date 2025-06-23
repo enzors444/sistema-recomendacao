@@ -88,16 +88,41 @@ Contém o histórico completo de todas as recomendações geradas.
 
 O sistema utiliza um algoritmo proprietário que pontua músicas baseado em:
 
+# Sistema de Pontuação para Recomendações
+
+## Critérios e Pesos
+
 | Critério | Peso Máximo |
 |----------|-------------|
 | Mesmo Artista | 9 pontos |
 | Gênero Exato | 10 pontos |
 | Gênero Similar | 4 pontos |
 | Ano Exato | 6 pontos |
+| Ano Muito Próximo | 5 pontos |
+| Ano Próximo | 4 pontos |
+| Ano Mesma Década | 2 pontos |
 | Mesmo Álbum | 3 pontos |
-| Idioma | 3 pontos |
-| Popularidade Similar | 4 pontos |
+| Idioma Exato | 3 pontos |
+| Idioma Similar | 1 ponto |
+| Popularidade Similar | 2 pontos |
 | Duração Similar | 3 pontos |
+| **Bônus: Mesmo Álbum + Artista** | **2 pontos** |
+
+## Descrição dos Critérios
+
+- **Mesmo Artista**: Música do mesmo artista/banda
+- **Gênero Exato**: Gênero musical idêntico
+- **Gênero Similar**: Gêneros relacionados ou subgêneros
+- **Ano Exato**: Mesmo ano de lançamento
+- **Ano Muito Próximo**: Diferença de 1-2 anos
+- **Ano Próximo**: Diferença de 3-5 anos
+- **Ano Mesma Década**: Mesma década de lançamento
+- **Mesmo Álbum**: Música do mesmo álbum
+- **Idioma Exato**: Mesmo idioma da letra
+- **Idioma Similar**: Idiomas da mesma família linguística
+- **Popularidade Similar**: Níveis de popularidade próximos
+- **Duração Similar**: Duração próxima da música
+- **Bônus**: Pontuação adicional quando música é do mesmo álbum e mesmo artista
 
 ### Gêneros Similares Reconhecidos
 - Rock ↔ Pop Rock
