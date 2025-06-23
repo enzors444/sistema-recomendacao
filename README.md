@@ -129,7 +129,7 @@ O sistema utiliza um algoritmo proprietário que pontua músicas baseado em:
 - Eletrônica ↔ Techno
 - Samba ↔ Bossa Nova
 - Country ↔ Folk ↔ Sertanejo
-- Heavy Metal ↔ Metal
+- Heavy Metal ↔ Metal ↔ Rock
 - Grunge ↔ Rock
 
 ## 💡 Características Técnicas
