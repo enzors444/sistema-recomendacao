@@ -1,3 +1,12 @@
+/*
+ * Projeto desenvolvido por:
+ * - Enzo Ribeiro da Silva (Matrícula: 812)
+ * - Gustavo (Matrícula: ?)
+ * - Lucas Hokari (Matrícula: ?)
+ * - João Gabriel (Matrícula: ?)
+ * - João Pedro (Matrícula: ?)
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
