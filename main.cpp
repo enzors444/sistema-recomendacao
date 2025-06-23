@@ -78,6 +78,7 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     if ((g1 == "rock" && g2 == "pop rock") || (g1 == "pop rock" && g2 == "rock")) return true;
     if ((g1 == "jazz" && g2 == "blues") || (g1 == "blues" && g2 == "jazz")) return true;
     if ((g1 == "hip hop" && g2 == "rap") || (g1 == "rap" && g2 == "hip hop")) return true;
+    if ((g1 == "trap" && g2 == "rap") || (g1 == "rap" && g2 == "trap")) return true;
     if ((g1 == "eletronica" && g2 == "techno") || (g1 == "techno" && g2 == "eletronica")) return true;
     if ((g1 == "samba" && g2 == "bossa nova") || (g1 == "bossa nova" && g2 == "samba")) return true;
     if ((g1 == "country" && g2 == "folk") || (g1 == "folk" && g2 == "country")) return true;
@@ -86,6 +87,7 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     if ((g1 == "trap" && g2 == "hip hop") || (g1 == "hip hop" && g2 == "trap")) return true;
     if ((g1 == "funk" && g2 == "hip hop") || (g1 == "hip hop" && g2 == "funk")) return true;
     if ((g1 == "funk" && g2 == "rap") || (g1 == "rap" && g2 == "funk")) return true;
+    if ((g1 == "funk" && g2 == "trap") || (g1 == "trap" && g2 == "funk")) return true;
     if ((g1 == "grunge" && g2 == "rock") || (g1 == "rock" && g2 == "grunge")) return true;
     
     return false;
@@ -114,9 +116,9 @@ bool popularidadeSimilar(int pop1, int pop2) {
 
 int calcularSimilaridade(const Musica& m1, const Musica& m2) {
     const int P_ARTISTA_EXATO = 9;
-    const int P_ALBUM_EXATO = 3;
-    const int P_GENERO_EXATO = 10;
-    const int P_GENERO_SIMILAR = 4;
+    const int P_ALBUM_EXATO = 5;
+    const int P_GENERO_EXATO = 12;
+    const int P_GENERO_SIMILAR = 9;
     const int P_IDIOMA_EXATO = 3;
     const int P_IDIOMA_SIMILAR = 1;
     const int P_ANO_EXATO = 6;
@@ -124,9 +126,9 @@ int calcularSimilaridade(const Musica& m1, const Musica& m2) {
     const int P_ANO_PROXIMO = 4;
     const int P_ANO_DECADA = 2;
     const int P_POPULARIDADE_SIMILAR = 2;
-    const int P_DURACAO_SIMILAR = 3;
-    const int B_MESMO_ALBUM_ARTISTA = 2;
-
+    const int P_DURACAO_SIMILAR = 2;
+    const int B_MESMO_ALBUM_ARTISTA = 3;
+    
     const int PONTUACAO_MAXIMA = 
         P_ARTISTA_EXATO +
         P_ALBUM_EXATO +
