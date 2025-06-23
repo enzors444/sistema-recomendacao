@@ -78,7 +78,6 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     
     if ((g1 == "rock" && g2 == "pop rock") || (g1 == "pop rock" && g2 == "rock")) return true;
     if ((g1 == "jazz" && g2 == "blues") || (g1 == "blues" && g2 == "jazz")) return true;
-    if ((g1 == "reggae" && g2 == "ska") || (g1 == "ska" && g2 == "reggae")) return true;
     if ((g1 == "hip hop" && g2 == "rap") || (g1 == "rap" && g2 == "hip hop")) return true;
     if ((g1 == "eletronica" && g2 == "techno") || (g1 == "techno" && g2 == "eletronica")) return true;
     if ((g1 == "samba" && g2 == "bossa nova") || (g1 == "bossa nova" && g2 == "samba")) return true;
@@ -88,6 +87,7 @@ bool generosSimilares(const string& genero1, const string& genero2) {
     if ((g1 == "trap" && g2 == "hip hop") || (g1 == "hip hop" && g2 == "trap")) return true;
     if ((g1 == "funk" && g2 == "hip hop") || (g1 == "hip hop" && g2 == "funk")) return true;
     if ((g1 == "funk" && g2 == "rap") || (g1 == "rap" && g2 == "funk")) return true;
+    if ((g1 == "grunge" && g2 == "rock") || (g1 == "rock" && g2 == "grunge")) return true;
     
     return false;
 }
