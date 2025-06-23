@@ -310,6 +310,3 @@ Conselho de Amigo;Vou Zuar;Single;Pagode;2025;Portugues;9;177
 Te Esquecer Pra Sempre;Kamisa 10;Single;Pagode;2024;Portugues;8;170
 A Gente Combina;Ferrugem;Single;Pagode;2024;Portugues;9;169
 Deixa Alguem Legal Te Amar;Thiaguinho;Infinito Vol.2;Pagode;2025;Portugues;9;173
-
-
-
