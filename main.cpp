@@ -48,14 +48,6 @@ struct Recomendacao {
 
 // ----------- Funções Auxiliares -----------
 
-bool mesmaDecada(int ano1, int ano2) {
-    return (ano1 / 10) == (ano2 / 10);
-}
-
-bool mesmoSeculo(int ano1, int ano2) {
-    return (ano1 / 100) == (ano2 / 100);
-}
-
 bool albumsSimilares(const string& album1, const string& album2) {
     string a1 = paraMinusculas(album1);
     string a2 = paraMinusculas(album2);
@@ -294,19 +286,6 @@ int buscarMusicasPorPalavrasChave(const Musica banco[], int total, const string&
     }
     
     return totalResultados;
-}
-
-int buscarMusica(const Musica banco[], int total, const string& titulo, const string& artista) {
-    string tituloMin = paraMinusculas(titulo);
-    string artistaMin = paraMinusculas(artista);
-
-    for (int i = 0; i < total; i++) {
-        if (paraMinusculas(banco[i].titulo) == tituloMin &&
-            paraMinusculas(banco[i].artista) == artistaMin) {
-            return i;
-        }
-    }
-    return -1;
 }
 
 // ----------- Sistema de Usuários -----------
